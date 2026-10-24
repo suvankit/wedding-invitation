@@ -1669,26 +1669,69 @@
         }
 
         // 5. RSVP & Blessings Wall Submission
-        function submitRSVP(event) {
+        // function submitRSVP(event) {
+        //     event.preventDefault();
+        //     const name = document.getElementById('guestName').value.trim();
+        //     const attendance = document.getElementById('guestAttendance').value;
+        //     const message = document.getElementById('guestMessage').value.trim() || 'Wishing Ankita & Preetikant a lifetime of happiness!';
+
+        //     if (!name) return;
+
+        //     const wishesList = document.getElementById('wishesList');
+        //     const newWish = document.createElement('div');
+        //     newWish.className = 'bg-[#f9f8f3] p-3 rounded-xl border border-stone-200/60 text-xs';
+        //     newWish.innerHTML = `<span class="font-semibold text-[#1e3a2b]">${escapeHtml(name)} (${escapeHtml(attendance)}):</span> <span class="text-stone-600">${escapeHtml(message)}</span>`;
+        //     wishesList.prepend(newWish);
+
+        //     const toast = document.getElementById('rsvpToast');
+        //     toast.textContent = `Thank you, ${name}! Your RSVP (${attendance}) and blessings have been recorded.`;
+        //     toast.classList.remove('hidden');
+
+        //     document.getElementById('rsvpForm').reset();
+        // }
+        const RSVP_URL = 'https://script.google.com/macros/s/AKfycbwia82Dyc2z0iMTmLlYgZq3XaYt8ljd-pUaVAReNPHE8EHcF-DuuE6BmYXxUXyO2KjM/exec';
+
+        function addWishToList(name, attendance, message, atTop) {
+            const wishesList = document.getElementById('wishesList');
+            const div = document.createElement('div');
+            div.className = 'bg-[#f9f8f3] p-3 rounded-xl border border-stone-200/60 text-xs';
+            div.innerHTML = `<span class="font-semibold text-[#1e3a2b]">${escapeHtml(name)}${attendance ? ' (' + escapeHtml(attendance) + ')' : ''}:</span> <span class="text-stone-600">${escapeHtml(message)}</span>`;
+            atTop ? wishesList.prepend(div) : wishesList.appendChild(div);
+        }
+
+        async function submitRSVP(event) {
             event.preventDefault();
             const name = document.getElementById('guestName').value.trim();
             const attendance = document.getElementById('guestAttendance').value;
             const message = document.getElementById('guestMessage').value.trim() || 'Wishing Ankita & Preetikant a lifetime of happiness!';
-
             if (!name) return;
 
-            const wishesList = document.getElementById('wishesList');
-            const newWish = document.createElement('div');
-            newWish.className = 'bg-[#f9f8f3] p-3 rounded-xl border border-stone-200/60 text-xs';
-            newWish.innerHTML = `<span class="font-semibold text-[#1e3a2b]">${escapeHtml(name)} (${escapeHtml(attendance)}):</span> <span class="text-stone-600">${escapeHtml(message)}</span>`;
-            wishesList.prepend(newWish);
-
             const toast = document.getElementById('rsvpToast');
-            toast.textContent = `Thank you, ${name}! Your RSVP (${attendance}) and blessings have been recorded.`;
-            toast.classList.remove('hidden');
+            const btn = event.target.querySelector('button[type="submit"]');
+            btn.disabled = true;
 
-            document.getElementById('rsvpForm').reset();
+            try {
+                const body = new URLSearchParams({ name, attendance, message });
+                await fetch(RSVP_URL, { method: 'POST', body, mode: 'no-cors' });
+                addWishToList(name, attendance, message, true);
+                toast.textContent = `Thank you, ${name}! Your RSVP and blessings have been sent.`;
+                document.getElementById('rsvpForm').reset();
+            } catch (err) {
+                toast.textContent = 'Sorry, something went wrong. Please try again.';
+            }
+            toast.classList.remove('hidden');
+            btn.disabled = false;
         }
+
+        // Load everyone's blessings when the page opens
+        async function loadWishes() {
+            try {
+                const res = await fetch(RSVP_URL);
+                const data = await res.json();
+                data.forEach(w => { if (w.name) addWishToList(w.name, w.attendance, w.message, false); });
+            } catch (e) { /* keep the sample blessing */ }
+        }
+        window.addEventListener('load', loadWishes);
 
         function escapeHtml(str) {
             return str.replace(/[&<>'"]/g, tag => ({
