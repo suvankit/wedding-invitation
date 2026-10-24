@@ -1565,37 +1565,73 @@
         //         bar3.classList.remove('animate-bounce');
         //     }
         // }
-        // 3. Background music from YouTube (hidden player)
-        // 3. Background music: MP3 first, YouTube as fallback
-        // 3. Background music (hidden audio, controlled by the button)
-        const MUSIC_URL = 'https://drive.google.com/uc?export=download&id=1kJVQaMoqTjK7NMUXLrI5WNkS3za3gayY';
-        const bgAudio = new Audio();
+
+        // 3. Background music: autoplay attempt, first-tap fallback, button toggles
+        const MUSIC_URL = 'https://suvankit.github.io/wedding-invitation/ANIMAL SATRANGA Flute C.mp3';
+        const bgAudio = new Audio(MUSIC_URL);
         bgAudio.loop = true;
         bgAudio.volume = 0.6;
-        bgAudio.preload = 'none';
-        let musicOn = false;
+        bgAudio.preload = 'auto';
 
-        function setMusicUI(on, label) {
-            document.getElementById('musicText').textContent = label || (on ? 'Pause Music' : 'Play Music');
+        let musicOn = false;
+        let userPaused = false;
+
+        function setMusicUI(on) {
+            document.getElementById('musicText').textContent = on ? 'Pause Music' : 'Play Music';
             ['bar1', 'bar2', 'bar3'].forEach(id =>
                 document.getElementById(id).classList.toggle('animate-bounce', on));
         }
 
+        function playMusic() {
+            return bgAudio.play()
+                .then(() => {
+                    musicOn = true;
+                    setMusicUI(true);
+                    removeGestureListeners();
+                })
+                .catch(() => {
+                    musicOn = false;
+                    setMusicUI(false);   // blocked: wait for the first tap
+                });
+        }
+
+        function pauseMusic() {
+            bgAudio.pause();
+            musicOn = false;
+            setMusicUI(false);
+        }
+
         function toggleWeddingMusic() {
-            if (!musicOn) {
-                if (!bgAudio.src) bgAudio.src = MUSIC_URL;
-                bgAudio.play()
-                    .then(() => { musicOn = true; setMusicUI(true); })
-                    .catch(() => {
-                        setMusicUI(false, 'Music unavailable');
-                        setTimeout(() => setMusicUI(false), 3000);
-                    });
+            if (musicOn) {
+                userPaused = true;
+                pauseMusic();
             } else {
-                bgAudio.pause();
-                musicOn = false;
-                setMusicUI(false);
+                userPaused = false;
+                playMusic();
             }
         }
+
+        // Fallback: start on the first tap/click/key if autoplay was blocked
+        function firstGesture() {
+            if (!musicOn && !userPaused) playMusic();
+        }
+        const gestureEvents = ['click', 'touchend', 'keydown'];
+        gestureEvents.forEach(evt => document.addEventListener(evt, firstGesture));
+        function removeGestureListeners() {
+            gestureEvents.forEach(evt => document.removeEventListener(evt, firstGesture));
+        }
+
+        // Try autoplay as soon as the page loads
+        window.addEventListener('load', playMusic);
+
+        // Pause when the tab is hidden, resume when it returns (unless the guest paused)
+        document.addEventListener('visibilitychange', () => {
+            if (document.hidden) {
+                if (musicOn) bgAudio.pause();
+            } else if (musicOn && !userPaused) {
+                bgAudio.play().catch(() => {});
+            }
+        });
 
         // 4. Download .ICS Calendar File for Dec 1 & Dec 2, 2026
         function downloadCalendarInvite() {
