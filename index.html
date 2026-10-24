@@ -1,0 +1,1731 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ankita & Preetikant | Wedding Invitation - Dec 1 & 2, 2026</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cinzel+Decorative:wght@700&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,600&family=Great+Vibes&family=Poppins:wght@300;400;500;600&family=Rozha+One&display=swap" rel="stylesheet">
+    <!-- Tone.js for gentle Indian Flute/Ambient Web Audio melody -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.49/Tone.js"></script> -->
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        script: ['"Great Vibes"', 'cursive'],
+                        brush: ['"Alex Brush"', 'cursive'],
+                        serif: ['"Cormorant Garamond"', 'serif'],
+                        display: ['"Rozha One"', 'serif'],
+                        cinzel: ['"Cinzel Decorative"', 'serif'],
+                        sans: ['"Poppins"', 'sans-serif'],
+                    },
+                    colors: {
+                        maroon: {
+                            DEFAULT: '#6b0f1a',
+                            dark: '#4a070f',
+                            light: '#8b1e2b'
+                        },
+                        gold: {
+                            DEFAULT: '#c59b27',
+                            light: '#e6c762',
+                            dark: '#9a7414',
+                            pale: '#fdf6e2'
+                        },
+                        emerald: {
+                            royal: '#062614',
+                            deep: '#041a0d'
+                        }
+                    },
+                    animation: {
+                        'spin-slow': 'spin 35s linear infinite',
+                        'sway': 'sway 4s ease-in-out infinite',
+                        'float': 'float 3.5s ease-in-out infinite',
+                        'pulse-glow': 'pulseGlow 2.5s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        sway: {
+                            '0%, 100%': { transform: 'rotate(-3deg)' },
+                            '50%': { transform: 'rotate(3deg)' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        pulseGlow: {
+                            '0%, 100%': { opacity: 0.6, transform: 'scale(1)' },
+                            '50%': { opacity: 1, transform: 'scale(1.08)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+
+    <style>
+        /* Custom Patterns & Textures Matching Video Scenes */
+        .bg-japanese-wave {
+            background-color: #fef6d8;
+            background-image: radial-gradient(circle at 50% 100%, rgba(212, 168, 79, 0.14) 10%, transparent 11%, transparent 20%, rgba(212, 168, 79, 0.14) 21%, transparent 22%, transparent 30%, rgba(212, 168, 79, 0.14) 31%, transparent 32%);
+            background-size: 60px 30px;
+        }
+
+        .bg-mehendi-watercolor {
+            background: radial-gradient(circle at 90% 25%, rgba(167, 243, 208, 0.55) 0%, transparent 45%),
+                        radial-gradient(circle at 80% 75%, rgba(190, 242, 100, 0.6) 0%, transparent 50%),
+                        radial-gradient(circle at 15% 40%, rgba(254, 240, 138, 0.45) 0%, transparent 50%),
+                        #f8faf5;
+        }
+
+        .bg-sangeet-pattern {
+            background-color: #062312;
+            background-image:
+                radial-gradient(rgba(240, 200, 60, 0.25) 1.5px, transparent 2px);
+            background-size: 54px 54px;
+            background-position: 0 0, 18px 18px;
+        }
+
+        .bg-haldi-texture {
+            background: linear-gradient(180deg, #fce570 0%, #f8d852 65%, #eec233 100%);
+        }
+
+        .bg-paper-texture {
+            background-color: #f9f8f3;
+            background-image: radial-gradient(rgba(0,0,0,0.03) 1px, transparent 0);
+            background-size: 24px 24px;
+        }
+
+        /* Scroll Reveal Animations */
+        .reveal {
+            opacity: 0;
+            transform: translateY(32px);
+            transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .reveal-delay-1 { transition-delay: 0.2s; }
+        .reveal-delay-2 { transition-delay: 0.4s; }
+        .reveal-delay-3 { transition-delay: 0.6s; }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #fdf6e2;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #b5892e;
+            border-radius: 4px;
+        }
+
+        @keyframes sgSwing {
+            0%, 100% { transform: rotate(-4deg); }
+            50% { transform: rotate(4deg); }
+        }
+        @keyframes sgPulse {
+            0%, 100% { opacity: 0.5; transform: scale(0.9); }
+            50% { opacity: 1; transform: scale(1.15); }
+        }
+        .sg-swing {
+            transform-box: fill-box;
+            transform-origin: 50% 0;
+            animation: sgSwing 4s ease-in-out infinite;
+        }
+        .sg-halo {
+            transform-box: fill-box;
+            transform-origin: center;
+            animation: sgPulse 2.4s ease-in-out infinite;
+        }
+
+        /* Bird flying animation (0:06 & 0:18) */
+        @keyframes flyAcross {
+            0% { transform: translate(-10vw, 4vh) scale(0.7); opacity: 0; }
+            15% { opacity: 0.85; }
+            85% { opacity: 0.85; }
+            100% { transform: translate(110vw, -8vh) scale(1); opacity: 0; }
+        }
+        .birds-container {
+            animation: flyAcross 18s linear infinite;
+        }
+
+        /* Falling Haldi Petals Animation (0:30 - 0:34) */
+        @keyframes petalFall {
+            0% { transform: translateY(-10vh) rotate(0deg) translateX(0px); opacity: 0; }
+            15% { opacity: 0.9; }
+            85% { opacity: 0.9; }
+            100% { transform: translateY(105vh) rotate(360deg) translateX(40px); opacity: 0; }
+        }
+        .petal {
+            position: absolute;
+            top: -40px;
+            pointer-events: none;
+            animation: petalFall linear infinite;
+        }
+    </style>
+</head>
+<body class="bg-[#fdf8ee] text-stone-800 antialiased overflow-x-hidden selection:bg-maroon selection:text-white">
+
+    <div style="position:fixed;bottom:0;left:0;width:200px;height:200px;opacity:0.01;pointer-events:none;z-index:-1;" aria-hidden="true">
+        <div id="ytPlayer"></div>
+    </div>
+    <div id="spotifyPanel" class="hidden fixed top-16 right-4 z-50 w-[300px] max-w-[85vw] shadow-2xl">
+        <iframe src="https://drive.google.com/file/d/1kJVQaMoqTjK7NMUXLrI5WNkS3za3gayY/preview"
+            width="100%" height="80" frameborder="0" allow="autoplay"
+            style="border-radius:12px"></iframe>
+    </div>
+
+    <!-- FLOATING AUDIO CONTROLS (Top Right) -->
+    <div class="fixed top-4 right-4 z-50 flex items-center gap-2">
+        <button id="musicToggleBtn" onclick="toggleWeddingMusic()" aria-label="Toggle Background Music" class="flex items-center gap-2 bg-white/90 backdrop-blur-md border border-gold/50 text-maroon px-4 py-2.5 rounded-full shadow-lg hover:bg-gold/10 transition-all group">
+            <span id="musicWaves" class="flex items-end gap-0.5 h-4 w-4">
+                <span class="w-1 bg-maroon h-2 rounded-full transition-all duration-300" id="bar1"></span>
+                <span class="w-1 bg-maroon h-4 rounded-full transition-all duration-300" id="bar2"></span>
+                <span class="w-1 bg-maroon h-1.5 rounded-full transition-all duration-300" id="bar3"></span>
+            </span>
+            <span id="musicText" class="text-xs font-medium tracking-wider uppercase">Play Music</span>
+        </button>
+    </div>
+
+    <!-- QUICK BOTTOM NAVIGATION PILL (Mobile Friendly) -->
+    <nav class="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 bg-maroon/95 text-gold-pale backdrop-blur-md px-5 py-2.5 rounded-full shadow-2xl border border-gold/40 flex items-center gap-3 sm:gap-6 text-xs sm:text-sm font-medium tracking-wide">
+        <a href="#invocation" class="hover:text-gold-light transition">Start</a>
+        <a href="#welcome" class="hover:text-gold-light transition">Welcome</a>
+        <a href="#parents" class="hover:text-gold-light transition">Parents</a>
+        <a href="#events" class="hover:text-gold-light transition">Events</a>
+        <a href="#venue" class="hover:text-gold-light transition">Venue</a>
+        <a href="#savedate" class="hover:text-gold-light transition">Save Date</a>
+    </nav>
+
+    <!-- ==========================================
+         REUSABLE SVG DEFINITIONS (Original Video Couple, Chandeliers & Mandala)
+         ========================================== -->
+    <svg class="hidden" aria-hidden="true">
+        <defs>
+            <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#9a7414" />
+                <stop offset="50%" stop-color="#d4af37" />
+                <stop offset="100%" stop-color="#8a620a" />
+            </linearGradient>
+            <radialGradient id="warmHalo">
+                <stop offset="0%" stop-color="#f6d365"/>
+                <stop offset="100%" stop-color="transparent"/>
+            </radialGradient>
+
+            <!-- Original Video Couple Illustration (Bride in Red/Gold Saree with Gajra & Groom in Cream Shirt & Dhoti holding hands) -->
+            <g id="original-video-couple">
+                <!-- Soft Sunset Halo Behind Couple -->
+                <circle cx="160" cy="175" r="130" fill="url(#warmHalo)" opacity="0.55"/>
+
+                <!-- BRIDE (Left - Red/Rust & Gold Saree, Jasmine Gajra in Hair, Gold Temple Jewelry) -->
+                <g transform="translate(45, 42)">
+                    <!-- Hair Bun & White Jasmine Gajra -->
+                    <!-- Hair back & bun -->
+                    <ellipse cx="52" cy="36" rx="24" ry="22" fill="#1e1b18"/>
+                    <circle cx="28" cy="40" r="12" fill="#1e1b18"/>
+                    <path d="M18 32 Q16 42 22 50" stroke="#ffffff" stroke-width="5" stroke-dasharray="4 3" fill="none" stroke-linecap="round"/>
+                    <!-- Neck -->
+                    <rect x="45" y="55" width="14" height="14" fill="#d99b72"/>
+                    <!-- Face -->
+                    <ellipse cx="52" cy="42" rx="16" ry="19" fill="#d99b72"/>
+                    <!-- Hair parting -->
+                    <path d="M35 38 Q36 17 52 17 Q68 17 69 38 Q62 27 52 27 Q42 27 35 38 Z" fill="#1e1b18"/>
+                    <!-- Maang tikka & bindi -->
+                    <circle cx="52" cy="29" r="2.4" fill="#e6c762"/>
+                    <circle cx="52" cy="34" r="1.8" fill="#8b1e2b"/>
+                    <!-- Eyes, nose, smile -->
+                    <path d="M41 39 Q45 36.5 49 39 M55 39 Q59 36.5 63 39" stroke="#2b1d12" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+                    <circle cx="45" cy="40.5" r="1.5" fill="#1e1b18"/>
+                    <circle cx="59" cy="40.5" r="1.5" fill="#1e1b18"/>
+                    <path d="M52 42 L50.5 47 Q52 48.5 53.5 47" stroke="#b97a52" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+                    <path d="M46 51 Q52 56 58 51" stroke="#8b1e2b" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+                    <!-- Jhumkas -->
+                    <circle cx="36" cy="47" r="3" fill="#e6c762"/>
+                    <path d="M33 50 L39 50 L36 55 Z" fill="#c59b27"/>
+                    <circle cx="68" cy="47" r="3" fill="#e6c762"/>
+                    <path d="M65 50 L71 50 L68 55 Z" fill="#c59b27"/>
+                    <!-- Necklaces -->
+                    <path d="M42 66 Q52 74 62 66" stroke="#f5d142" stroke-width="3.5" fill="none"/>
+                    <path d="M38 70 Q52 88 66 70" stroke="#d4af37" stroke-width="4.5" fill="none"/>
+                    <path d="M35 75 Q52 100 69 75" stroke="#c59b27" stroke-width="4" stroke-dasharray="3 2" fill="none"/>
+
+                    <!-- Saree Blouse & Rust-Red Silk Drape -->
+                    <path d="M24 72 C24 65, 78 65, 82 72 L92 268 L14 268 Z" fill="#b2493a"/>
+                    <!-- Pleats & Gold Zari Pallu Drape -->
+                    <path d="M26 72 L78 135 L72 268 L20 268 Z" fill="#c45343" stroke="#e6c762" stroke-width="3"/>
+                    <line x1="42" y1="145" x2="38" y2="268" stroke="#96382b" stroke-width="1.5"/>
+                    <line x1="54" y1="145" x2="52" y2="268" stroke="#96382b" stroke-width="1.5"/>
+                    <!-- Kamarbandh (Waist Gold Belt) -->
+                    <path d="M24 142 Q53 150 82 142" stroke="#e6c762" stroke-width="4" fill="none"/>
+                    <!-- Left Arm with Gold Bangles -->
+                    <path d="M24 76 C14 110, 18 145, 36 168" stroke="#d99b72" stroke-width="9" fill="none" stroke-linecap="round"/>
+                    <circle cx="32" cy="162" r="5" fill="#e6c762"/>
+                    <!-- Right Arm Extending to Hold Groom's Hand -->
+                    <path d="M78 78 L112 138" stroke="#d99b72" stroke-width="10" stroke-linecap="round"/>
+                    <!-- Gold & Red Bangles -->
+                    <line x1="98" y1="114" x2="105" y2="126" stroke="#e6c762" stroke-width="11"/>
+                    <line x1="100" y1="117" x2="103" y2="123" stroke="#8b1e2b" stroke-width="11"/>
+                </g>
+
+                <!-- GROOM (Right - Cream Collar Shirt/Kurta, Gold Border Dhoti & Wristwatch) -->
+                <g transform="translate(155, 22)">
+                    <!-- Neck -->
+                    <rect x="43" y="52" width="14" height="16" fill="#c98a63"/>
+                    <!-- Ears -->
+                    <circle cx="32" cy="35" r="3.5" fill="#c98a63"/>
+                    <circle cx="68" cy="35" r="3.5" fill="#c98a63"/>
+                    <!-- Face -->
+                    <ellipse cx="50" cy="35" rx="17" ry="19" fill="#c98a63"/>
+                    <!-- Hair -->
+                    <path d="M32 33 C29 6, 71 6, 68 33 C64 22, 58 18, 50 18 C42 18, 36 22, 32 33 Z" fill="#1e1b18"/>
+                    <!-- Beard -->
+                    <path d="M33 37 C34 62, 66 62, 67 37 C63 45, 58 48, 50 48 C42 48, 37 45, 33 37 Z" fill="#1e1b18"/>
+                    <!-- Eyebrows, eyes, nose, smile -->
+                    <path d="M38 27 Q43 24.5 47 27 M53 27 Q57 24.5 62 27" stroke="#1e1b18" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+                    <circle cx="43" cy="31" r="2" fill="#1e1b18"/>
+                    <circle cx="57" cy="31" r="2" fill="#1e1b18"/>
+                    <path d="M50 33 L48.5 39 Q50 40.5 51.5 39" stroke="#a86f4a" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+                    <!-- Moustache -->
+                    <path d="M41 42.5 Q45.5 39 50 41 Q54.5 39 59 42.5 Q54.5 43.8 50 42.4 Q45.5 43.8 41 42.5 Z" fill="#1e1b18"/>
+                    <!-- Smile -->
+                    <path d="M45 45 Q50 48.5 55 45" stroke="#7a1f1f" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+                    <!-- Cream Half-Sleeve Shirt / Kurta -->
+                    <path d="M16 68 C30 62, 70 62, 84 68 L90 175 L10 175 Z" fill="#f7eed7" stroke="#dfd1b2" stroke-width="1.5"/>
+                    <!-- Shirt Collar & Placket -->
+                    <path d="M38 64 L50 78 L62 64" fill="none" stroke="#c59b27" stroke-width="2"/>
+                    <line x1="50" y1="78" x2="50" y2="165" stroke="#dfd1b2" stroke-width="1.5"/>
+                    <!-- Pocket with Gold Trim -->
+                    <rect x="60" y="96" width="14" height="16" fill="none" stroke="#c59b27" stroke-width="1.2"/>
+                    <!-- Groom's Right Arm Holding Bride's Hand -->
+                    <path d="M18 75 L2 158" stroke="#c98a63" stroke-width="11" stroke-linecap="round"/>
+                    <path d="M20 72 L10 112" stroke="#f7eed7" stroke-width="15" stroke-linecap="round"/>
+                    <!-- Joined Hands -->
+                    <circle cx="2" cy="160" r="8" fill="#c98a63"/>
+                    <!-- Groom's Left Arm with Classic Wristwatch -->
+                    <path d="M82 75 L94 155" stroke="#c98a63" stroke-width="11" stroke-linecap="round"/>
+                    <path d="M80 72 L88 112" stroke="#f7eed7" stroke-width="15" stroke-linecap="round"/>
+                    <!-- Wristwatch -->
+                    <rect x="88" y="142" width="11" height="6" rx="1" fill="#3e2723"/>
+                    <circle cx="93.5" cy="145" r="3.5" fill="#e6c762" stroke="#3e2723" stroke-width="1"/>
+                    <!-- Traditional Cream Pleated Dhoti with Gold Border -->
+                    <path d="M14 175 L86 175 L80 288 L52 288 L50 205 L48 288 L20 288 Z" fill="#efe2c2" stroke="#c59b27" stroke-width="2"/>
+                    <path d="M50 175 Q36 225 46 288" fill="none" stroke="#c59b27" stroke-width="3"/>
+                    <path d="M50 175 Q62 230 54 288" fill="none" stroke="#d4af37" stroke-width="1.8"/>
+                </g>
+            </g>
+        </defs>
+    </svg>
+
+    <!-- ==========================================
+         PAGE 1: INVOCATION (0:00 - 0:04)
+         ========================================== -->
+    <section id="invocation" class="relative min-h-screen w-full bg-japanese-wave flex flex-col items-center justify-between py-12 px-4 overflow-hidden select-none">
+        
+        <!-- Top Rotating Golden Mandala -->
+        <div class="w-72 h-36 sm:w-96 sm:h-48 -mt-20 sm:-mt-24 pointer-events-none opacity-85">
+            <svg viewBox="0 0 200 200" class="w-full h-full animate-spin-slow">
+                <g fill="none" stroke="url(#goldGrad)" stroke-width="1.2">
+                    <circle cx="100" cy="100" r="92" stroke-dasharray="4 3"/>
+                    <circle cx="100" cy="100" r="84"/>
+                    <circle cx="100" cy="100" r="65"/>
+                    <circle cx="100" cy="100" r="45"/>
+                    <circle cx="100" cy="100" r="24"/>
+                    <!-- Mandala Petals -->
+                    <g id="mandala-ring">
+                        <path d="M100 8 C110 30, 110 45, 100 65 C90 45, 90 30, 100 8 Z" fill="rgba(212,175,55,0.1)"/>
+                        <path d="M100 8 C110 30, 110 45, 100 65 C90 45, 90 30, 100 8 Z" transform="rotate(22.5 100 100)" fill="rgba(212,175,55,0.1)"/>
+                        <path d="M100 8 C110 30, 110 45, 100 65 C90 45, 90 30, 100 8 Z" transform="rotate(45 100 100)" fill="rgba(212,175,55,0.1)"/>
+                        <path d="M100 8 C110 30, 110 45, 100 65 C90 45, 90 30, 100 8 Z" transform="rotate(67.5 100 100)" fill="rgba(212,175,55,0.1)"/>
+                        <path d="M100 8 C110 30, 110 45, 100 65 C90 45, 90 30, 100 8 Z" transform="rotate(90 100 100)" fill="rgba(212,175,55,0.1)"/>
+                        <path d="M100 8 C110 30, 110 45, 100 65 C90 45, 90 30, 100 8 Z" transform="rotate(112.5 100 100)" fill="rgba(212,175,55,0.1)"/>
+                        <path d="M100 8 C110 30, 110 45, 100 65 C90 45, 90 30, 100 8 Z" transform="rotate(135 100 100)" fill="rgba(212,175,55,0.1)"/>
+                        <path d="M100 8 C110 30, 110 45, 100 65 C90 45, 90 30, 100 8 Z" transform="rotate(157.5 100 100)" fill="rgba(212,175,55,0.1)"/>
+                        <path d="M100 8 C110 30, 110 45, 100 65 C90 45, 90 30, 100 8 Z" transform="rotate(180 100 100)" fill="rgba(212,175,55,0.1)"/>
+                        <path d="M100 8 C110 30, 110 45, 100 65 C90 45, 90 30, 100 8 Z" transform="rotate(202.5 100 100)" fill="rgba(212,175,55,0.1)"/>
+                        <path d="M100 8 C110 30, 110 45, 100 65 C90 45, 90 30, 100 8 Z" transform="rotate(225 100 100)" fill="rgba(212,175,55,0.1)"/>
+                        <path d="M100 8 C110 30, 110 45, 100 65 C90 45, 90 30, 100 8 Z" transform="rotate(247.5 100 100)" fill="rgba(212,175,55,0.1)"/>
+                        <path d="M100 8 C110 30, 110 45, 100 65 C90 45, 90 30, 100 8 Z" transform="rotate(270 100 100)" fill="rgba(212,175,55,0.1)"/>
+                        <path d="M100 8 C110 30, 110 45, 100 65 C90 45, 90 30, 100 8 Z" transform="rotate(292.5 100 100)" fill="rgba(212,175,55,0.1)"/>
+                        <path d="M100 8 C110 30, 110 45, 100 65 C90 45, 90 30, 100 8 Z" transform="rotate(315 100 100)" fill="rgba(212,175,55,0.1)"/>
+                        <path d="M100 8 C110 30, 110 45, 100 65 C90 45, 90 30, 100 8 Z" transform="rotate(337.5 100 100)" fill="rgba(212,175,55,0.1)"/>
+                    </g>
+                </g>
+            </svg>
+        </div>
+
+        <!-- Left & Right Pink Lotus & Calla Lily Borders -->
+        <div class="absolute inset-y-0 left-0 w-16 sm:w-28 flex flex-col justify-between py-16 pointer-events-none opacity-90">
+            <svg viewBox="0 0 100 500" class="w-full h-full">
+                <g transform="translate(15, 60)">
+                    <path d="M20 60 C5 30, 35 0, 20 0 C5 0, 35 30, 20 60" fill="#f48fb1" stroke="#ad1457" stroke-width="0.6"/>
+                    <path d="M20 60 C-10 40, 10 10, 0 15 C-10 20, 0 50, 20 60" fill="#f8bbd0"/>
+                    <path d="M20 60 C50 40, 30 10, 40 15 C50 20, 40 50, 20 60" fill="#f8bbd0"/>
+                    <line x1="20" y1="60" x2="20" y2="440" stroke="#689f38" stroke-width="3"/>
+                </g>
+                <g transform="translate(30, 180) scale(0.85)">
+                    <path d="M20 60 C5 30, 35 0, 20 0 C5 0, 35 30, 20 60" fill="#f06292"/>
+                    <path d="M20 60 C-10 40, 10 10, 0 15 C-10 20, 0 50, 20 60" fill="#f48fb1"/>
+                    <path d="M20 60 C50 40, 30 10, 40 15 C50 20, 40 50, 20 60" fill="#f48fb1"/>
+                    <line x1="20" y1="60" x2="20" y2="350" stroke="#558b2f" stroke-width="3"/>
+                </g>
+                <g transform="translate(10, 310)">
+                    <path d="M25 60 C5 30, 45 0, 25 0 C5 0, 45 30, 25 60" fill="#f48fb1"/>
+                    <path d="M25 60 C-15 35, 10 10, -5 20 C-15 25, 0 55, 25 60" fill="#f8bbd0"/>
+                    <path d="M25 60 C65 35, 40 10, 55 20 C65 25, 50 55, 25 60" fill="#f8bbd0"/>
+                    <!-- White Calla Lilies at bottom -->
+                    <path d="M15 110 C5 80, 45 70, 35 110 Z" fill="#ffffff" stroke="#dcedc8" stroke-width="1"/>
+                    <path d="M25 90 L27 78" stroke="#fbc02d" stroke-width="2.5" stroke-linecap="round"/>
+                </g>
+            </svg>
+        </div>
+
+        <div class="absolute inset-y-0 right-0 w-16 sm:w-28 flex flex-col justify-between py-16 pointer-events-none opacity-90 transform scale-x-[-1]">
+            <svg viewBox="0 0 100 500" class="w-full h-full">
+                <g transform="translate(15, 60)">
+                    <path d="M20 60 C5 30, 35 0, 20 0 C5 0, 35 30, 20 60" fill="#f48fb1" stroke="#ad1457" stroke-width="0.6"/>
+                    <path d="M20 60 C-10 40, 10 10, 0 15 C-10 20, 0 50, 20 60" fill="#f8bbd0"/>
+                    <path d="M20 60 C50 40, 30 10, 40 15 C50 20, 40 50, 20 60" fill="#f8bbd0"/>
+                    <line x1="20" y1="60" x2="20" y2="440" stroke="#689f38" stroke-width="3"/>
+                </g>
+                <g transform="translate(30, 180) scale(0.85)">
+                    <path d="M20 60 C5 30, 35 0, 20 0 C5 0, 35 30, 20 60" fill="#f06292"/>
+                    <path d="M20 60 C-10 40, 10 10, 0 15 C-10 20, 0 50, 20 60" fill="#f48fb1"/>
+                    <path d="M20 60 C50 40, 30 10, 40 15 C50 20, 40 50, 20 60" fill="#f48fb1"/>
+                    <line x1="20" y1="60" x2="20" y2="350" stroke="#558b2f" stroke-width="3"/>
+                </g>
+                <g transform="translate(10, 310)">
+                    <path d="M25 60 C5 30, 45 0, 25 0 C5 0, 45 30, 25 60" fill="#f48fb1"/>
+                    <path d="M25 60 C-15 35, 10 10, -5 20 C-15 25, 0 55, 25 60" fill="#f8bbd0"/>
+                    <path d="M25 60 C65 35, 40 10, 55 20 C65 25, 50 55, 25 60" fill="#f8bbd0"/>
+                    <path d="M15 110 C5 80, 45 70, 35 110 Z" fill="#ffffff" stroke="#dcedc8" stroke-width="1"/>
+                    <path d="M25 90 L27 78" stroke="#fbc02d" stroke-width="2.5" stroke-linecap="round"/>
+                </g>
+            </svg>
+        </div>
+
+        <!-- Center Cream Arch Card with Lord Ganesha -->
+        <div class="relative z-10 max-w-md w-full bg-[#fffdf7]/90 backdrop-blur-sm rounded-t-full rounded-b-3xl pt-16 pb-12 px-8 shadow-xl border border-gold/30 flex flex-col items-center text-center my-auto reveal active">
+            <!-- Ornate Golden Lord Ganesha Motif -->
+            <div class="w-40 h-44 sm:w-48 sm:h-52 mb-6 animate-float">
+                <svg viewBox="0 0 200 220" class="w-full h-full drop-shadow-md">
+                    <!-- Crown (Mukut) -->
+                    <path d="M100 12 L118 42 L82 42 Z" fill="#b38228"/>
+                    <path d="M75 48 C75 30, 125 30, 125 48 Z" fill="#c59b27"/>
+                    <circle cx="100" cy="25" r="5" fill="#fdf6e2"/>
+                    <path d="M68 55 Q100 42 132 55" stroke="#9a7414" stroke-width="4" fill="none" stroke-linecap="round"/>
+                    <!-- Ears -->
+                    <path d="M72 65 C30 55, 25 115, 68 115" fill="none" stroke="#b38228" stroke-width="7" stroke-linecap="round"/>
+                    <path d="M128 65 C170 55, 175 115, 132 115" fill="none" stroke="#b38228" stroke-width="7" stroke-linecap="round"/>
+                    <!-- Head & Trunk Swirl -->
+                    <path d="M78 65 C75 110, 90 155, 125 155 C145 155, 148 135, 132 130 C120 128, 118 142, 128 144" fill="none" stroke="#9a7414" stroke-width="9" stroke-linecap="round"/>
+                    <!-- Tilak on Forehead -->
+                    <path d="M90 72 Q100 78 110 72" stroke="#b38228" stroke-width="3.5" fill="none"/>
+                    <path d="M92 80 Q100 86 108 80" stroke="#b38228" stroke-width="3.5" fill="none"/>
+                    <circle cx="100" cy="65" r="4" fill="#8b1e2b"/>
+                    <!-- Eye -->
+                    <path d="M108 92 Q118 86 124 94" stroke="#7a590f" stroke-width="3" fill="none" stroke-linecap="round"/>
+                    <circle cx="116" cy="92" r="2.5" fill="#7a590f"/>
+                    <!-- Lower Swirls -->
+                    <path d="M55 135 C45 170, 95 195, 140 175" fill="none" stroke="#c59b27" stroke-width="6" stroke-linecap="round"/>
+                    <path d="M75 165 C95 185, 135 190, 155 160" fill="none" stroke="#9a7414" stroke-width="4" stroke-linecap="round"/>
+                    <circle cx="68" cy="145" r="6" fill="#c59b27"/>
+                </svg>
+            </div>
+
+            <!-- Invocation Text -->
+            <h2 class="font-brush text-3xl sm:text-4xl text-[#a67c1e] leading-relaxed tracking-wide">
+                Om Shree Shree<br>Ganeshay Namah
+            </h2>
+
+            <p class="mt-4 text-xs uppercase tracking-[0.25em] text-stone-500 font-sans">
+                With the blessings of the Almighty
+            </p>
+
+            <!-- Scroll Down Indicator -->
+            <a href="#welcome" class="mt-8 inline-flex flex-col items-center text-xs uppercase tracking-widest text-[#9a7414] hover:text-maroon transition group">
+                <span>Scroll to Open Invitation</span>
+                <span class="mt-2 w-7 h-11 rounded-full border-2 border-[#b38228]/60 flex justify-center p-1">
+                    <span class="w-1.5 h-2.5 bg-maroon rounded-full animate-bounce"></span>
+                </span>
+            </a>
+        </div>
+
+        <!-- Bottom Rotating Mandala -->
+        <div class="w-72 h-36 sm:w-96 sm:h-48 -mb-20 sm:-mb-24 pointer-events-none opacity-85">
+            <svg viewBox="0 0 200 200" class="w-full h-full animate-spin-slow">
+                <use href="#mandala-ring" stroke="url(#goldGrad)" stroke-width="1.2"/>
+                <circle cx="100" cy="100" r="84" fill="none" stroke="#b38228" stroke-width="1.2"/>
+                <circle cx="100" cy="100" r="65" fill="none" stroke="#b38228" stroke-width="1.2"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         PAGE 2: WELCOME / HERO SECTION (0:05 - 0:09)
+         ========================================== -->
+    <section id="welcome" class="relative min-h-screen w-full bg-gradient-to-b from-[#d8e6ef] via-[#fbf6eb] to-[#f4e3c3] py-16 px-4 overflow-hidden flex flex-col items-center justify-between">
+        
+        <!-- Top Fairy Lights, Palm Leaves & Chandeliers Decoration -->
+        <div class="absolute top-0 inset-x-0 h-56 pointer-events-none overflow-hidden">
+            <svg viewBox="0 0 1200 260" preserveAspectRatio="none" class="w-full h-full">
+                <!-- Palm Fronds Arching -->
+                <path d="M-50 0 Q180 60 350 160 M-20 0 Q220 30 420 100 M0 0 Q140 90 240 200" stroke="#3b6e28" stroke-width="14" stroke-dasharray="6 10" fill="none" opacity="0.65"/>
+                <path d="M1250 0 Q1020 60 850 160 M1220 0 Q980 30 780 100 M1200 0 Q1060 90 960 200" stroke="#3b6e28" stroke-width="14" stroke-dasharray="6 10" fill="none" opacity="0.65"/>
+                
+                <!-- Fairy Light Strings -->
+                <path d="M0 15 Q300 130 600 40 Q900 130 1200 15" fill="none" stroke="#b5892e" stroke-width="1.5"/>
+                <path d="M0 55 Q400 175 800 50 Q1000 120 1200 40" fill="none" stroke="#b5892e" stroke-width="1"/>
+                
+                <!-- Glowing Warm Bulbs -->
+                <g fill="#fff8d6" class="animate-pulse-glow">
+                    <circle cx="120" cy="55" r="6"/><circle cx="240" cy="80" r="7"/><circle cx="360" cy="82" r="6"/>
+                    <circle cx="480" cy="65" r="7"/><circle cx="600" cy="40" r="6"/><circle cx="720" cy="65" r="7"/>
+                    <circle cx="840" cy="82" r="6"/><circle cx="960" cy="80" r="7"/><circle cx="1080" cy="55" r="6"/>
+                    <circle cx="180" cy="95" r="5"/><circle cx="420" cy="115" r="6"/><circle cx="660" cy="90" r="5"/>
+                    <circle cx="900" cy="90" r="6"/><circle cx="1040" cy="85" r="5"/>
+                </g>
+            </svg>
+
+            <!-- Center & Side Hanging Royal Chandeliers -->
+            <div class="absolute top-2 left-1/2 -translate-x-1/2 w-36 sm:w-44 animate-sway origin-top">
+                <svg viewBox="0 0 160 140" class="w-full h-full drop-shadow">
+                    <line x1="80" y1="0" x2="80" y2="35" stroke="#9a7414" stroke-width="2"/>
+                    <path d="M72 35 L88 35 L84 85 L76 85 Z" fill="#c59b27"/>
+                    <path d="M80 75 Q50 95 30 65 M80 75 Q60 100 45 70 M80 75 Q110 95 130 65 M80 75 Q100 100 115 70" fill="none" stroke="#b38228" stroke-width="2.5"/>
+                    <rect x="28" y="53" width="4" height="12" fill="#fffdf7"/><circle cx="30" cy="50" r="3" fill="#ffca28"/>
+                    <rect x="43" y="58" width="4" height="12" fill="#fffdf7"/><circle cx="45" cy="55" r="3" fill="#ffca28"/>
+                    <rect x="128" y="53" width="4" height="12" fill="#fffdf7"/><circle cx="130" cy="50" r="3" fill="#ffca28"/>
+                    <rect x="113" y="58" width="4" height="12" fill="#fffdf7"/><circle cx="115" cy="55" r="3" fill="#ffca28"/>
+                    <path d="M30 68 Q55 110 80 90 Q105 110 130 68" fill="none" stroke="#d4af37" stroke-width="1.2" stroke-dasharray="2 3"/>
+                </svg>
+            </div>
+        </div>
+
+        <!-- Animated Flock of Birds (As seen in 0:06) -->
+        <div class="birds-container absolute top-36 left-0 pointer-events-none z-0">
+            <svg width="160" height="70" viewBox="0 0 160 70" fill="none" stroke="#3c2f2f" stroke-width="2" stroke-linecap="round">
+                <path d="M10 30 Q15 22 20 30 Q25 22 30 30" />
+                <path d="M35 20 Q40 12 45 20 Q50 12 55 20" />
+                <path d="M25 45 Q30 37 35 45 Q40 37 45 45" />
+                <path d="M65 25 Q70 17 75 25 Q80 17 85 25" />
+                <path d="M90 38 Q95 30 100 38 Q105 30 110 38" />
+                <path d="M115 18 Q120 10 125 18 Q130 10 135 18" />
+            </svg>
+        </div>
+
+        <!-- Main Heading & Invitation Message -->
+        <div class="relative z-10 mt-28 sm:mt-32 text-center max-w-2xl mx-auto reveal">
+            <!-- Small Maroon Ganesha Emblem -->
+            <div class="mx-auto w-10 h-10 mb-3 text-maroon flex items-center justify-center">
+                <svg viewBox="0 0 64 64" class="w-9 h-9 fill-current">
+                    <path d="M32 6 L40 18 L24 18 Z M22 22 C12 22 12 38 22 38 M42 22 C52 22 52 38 42 38 M28 22 C28 42 34 48 42 46" stroke="#6b0f1a" stroke-width="3" fill="none" stroke-linecap="round"/>
+                    <circle cx="32" cy="14" r="3" fill="#6b0f1a"/>
+                </svg>
+            </div>
+
+            <p class="font-serif text-lg sm:text-xl text-maroon tracking-wide leading-relaxed">
+                Be our guest<br>
+                We expect your presence at our<br>
+                Wedding Ceremony
+            </p>
+
+            <!-- Couple Names -->
+            <div class="my-4 sm:my-6">
+                <h1 class="font-display text-5xl sm:text-7xl text-maroon tracking-tight drop-shadow-sm">
+                    Ankita
+                </h1>
+                <span class="font-serif italic text-2xl sm:text-3xl text-maroon-light block my-1">&amp;</span>
+                <h1 class="font-display text-5xl sm:text-7xl text-maroon tracking-tight drop-shadow-sm">
+                    Preetikant
+                </h1>
+            </div>
+        </div>
+
+        <!-- Original Video-Style Couple Illustration (Bride in Red/Gold Saree & Groom in Cream Shirt/Dhoti) -->
+        <div class="relative z-10 mt-2 w-72 sm:w-80 h-80 mx-auto reveal reveal-delay-2">
+            <svg viewBox="0 0 320 340" class="w-full h-full drop-shadow-xl">
+                <use href="#original-video-couple"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         PAGE 3: PARENTS INTRODUCTION (0:10 - 0:19)
+         ========================================== -->
+    <section id="parents" class="relative min-h-screen w-full bg-gradient-to-b from-[#d8e6ef] via-[#fbf6eb] to-[#f4e3c3] py-20 px-4 overflow-hidden flex flex-col items-center justify-between border-t border-gold/30">
+        
+        <!-- Same Chandelier, Palm & Fairy Lights Theme (0:10 - 0:19) -->
+        <div class="absolute top-0 inset-x-0 h-52 pointer-events-none overflow-hidden">
+            <svg viewBox="0 0 1200 240" preserveAspectRatio="none" class="w-full h-full">
+                <path d="M-50 0 Q180 60 350 150 M-20 0 Q220 30 420 95" stroke="#3b6e28" stroke-width="14" stroke-dasharray="6 10" fill="none" opacity="0.6"/>
+                <path d="M1250 0 Q1020 60 850 150 M1220 0 Q980 30 780 95" stroke="#3b6e28" stroke-width="14" stroke-dasharray="6 10" fill="none" opacity="0.6"/>
+                <path d="M0 15 Q300 125 600 35 Q900 125 1200 15" fill="none" stroke="#b5892e" stroke-width="1.5"/>
+                <g fill="#fff8d6" class="animate-pulse-glow">
+                    <circle cx="150" cy="52" r="6"/><circle cx="300" cy="72" r="7"/><circle cx="450" cy="58" r="6"/>
+                    <circle cx="600" cy="35" r="6"/><circle cx="750" cy="58" r="7"/><circle cx="900" cy="72" r="6"/>
+                    <circle cx="1050" cy="52" r="6"/>
+                </g>
+            </svg>
+
+            <div class="absolute top-2 left-1/2 -translate-x-1/2 w-36 sm:w-40 animate-sway origin-top">
+                <svg viewBox="0 0 160 140" class="w-full h-full drop-shadow">
+                    <line x1="80" y1="0" x2="80" y2="35" stroke="#9a7414" stroke-width="2"/>
+                    <path d="M72 35 L88 35 L84 85 L76 85 Z" fill="#c59b27"/>
+                    <path d="M80 75 Q50 95 30 65 M80 75 Q60 100 45 70 M80 75 Q110 95 130 65 M80 75 Q100 100 115 70" fill="none" stroke="#b38228" stroke-width="2.5"/>
+                    <rect x="28" y="53" width="4" height="12" fill="#fffdf7"/><circle cx="30" cy="50" r="3" fill="#ffca28"/>
+                    <rect x="43" y="58" width="4" height="12" fill="#fffdf7"/><circle cx="45" cy="55" r="3" fill="#ffca28"/>
+                    <rect x="128" y="53" width="4" height="12" fill="#fffdf7"/><circle cx="130" cy="50" r="3" fill="#ffca28"/>
+                    <rect x="113" y="58" width="4" height="12" fill="#fffdf7"/><circle cx="115" cy="55" r="3" fill="#ffca28"/>
+                </svg>
+            </div>
+        </div>
+
+        <!-- Parents Details Cards (0:11 Ankita & 0:16 Preetikant) -->
+        <div class="relative z-10 mt-28 sm:mt-32 max-w-4xl w-full mx-auto px-2">
+            <div class="text-center mb-8 reveal">
+                <span class="inline-block px-4 py-1 rounded-full bg-maroon/10 text-maroon text-xs font-semibold tracking-widest uppercase">
+                    With the Blessings of Our Parents
+                </span>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Ankita Parents Card (0:11 - 0:14) -->
+                <div class="bg-white/80 backdrop-blur-md border border-gold/40 rounded-3xl p-7 text-center shadow-xl reveal reveal-delay-1 hover:border-maroon/40 transition">
+                    <h2 class="font-display text-4xl sm:text-5xl text-maroon mb-2">Ankita</h2>
+                    <p class="font-display text-lg text-maroon mb-2">D/o</p>
+                    <p class="font-display text-xl sm:text-2xl text-maroon leading-relaxed">
+                        Mrs. Itishree Prusti<br>
+                        &amp;<br>
+                        Mr. Sumanta Ku. Prusti
+                    </p>
+                </div>
+
+                <!-- Preetikant Parents Card (0:15 - 0:19) -->
+                <div class="bg-white/80 backdrop-blur-md border border-gold/40 rounded-3xl p-7 text-center shadow-xl reveal reveal-delay-2 hover:border-maroon/40 transition">
+                    <h2 class="font-display text-4xl sm:text-5xl text-maroon mb-2">Preetikant</h2>
+                    <p class="font-display text-lg text-maroon mb-2">S/o</p>
+                    <p class="font-display text-xl sm:text-2xl text-maroon leading-relaxed">
+                        Mrs. Bhrulata Rout<br>
+                        &amp;<br>
+                        Mr. Prasant Kumar Rout
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Original Video-Style Couple Illustration at Bottom -->
+        <div class="relative z-10 mt-6 w-72 sm:w-80 h-80 mx-auto reveal reveal-delay-3">
+            <svg viewBox="0 0 320 340" class="w-full h-full drop-shadow-xl">
+                <use href="#original-video-couple"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         PAGES 4 - 7: WEDDING EVENTS TIMELINE (0:20 - 0:40)
+         ========================================== -->
+    <div id="events" class="w-full">
+
+        <!-- PAGE 4: MEHENDI (0:20 - 0:24) -->
+        <section class="relative min-h-screen w-full bg-mehendi-watercolor py-20 px-4 flex flex-col items-center justify-between overflow-hidden border-t-4 border-gold/30">
+            
+            <!-- Top Green Vines, Marigold Garlands & Hanging Bells Toran -->
+            <div class="w-full max-w-5xl pointer-events-none -mt-16">
+                <svg viewBox="0 0 1000 180" class="w-full h-auto">
+                    <path d="M0 10 Q250 130 500 25 Q750 130 1000 10" fill="none" stroke="#2e7d32" stroke-width="12" stroke-dasharray="14 8"/>
+                    <path d="M0 30 Q250 160 500 55 Q750 160 1000 30" fill="none" stroke="#f57f17" stroke-width="6" stroke-dasharray="8 12"/>
+                    <path d="M100 10 Q350 140 600 20 Q800 130 950 10" fill="none" stroke="#d81b60" stroke-width="6" stroke-dasharray="6 14"/>
+                    
+                    <!-- Hanging Golden & Pink Bells on Left and Right -->
+                    <g stroke="#b38228" stroke-width="2">
+                        <line x1="40" y1="0" x2="40" y2="120"/><path d="M28 120 L52 120 L46 100 L34 100 Z" fill="#fbc02d"/>
+                        <line x1="75" y1="0" x2="75" y2="150"/><path d="M63 150 L87 150 L81 130 L69 130 Z" fill="#d81b60"/>
+                        <line x1="110" y1="0" x2="110" y2="105"/><path d="M98 105 L122 105 L116 85 L104 85 Z" fill="#fbc02d"/>
+
+                        <line x1="960" y1="0" x2="960" y2="120"/><path d="M948 120 L972 120 L966 100 L954 100 Z" fill="#fbc02d"/>
+                        <line x1="925" y1="0" x2="925" y2="150"/><path d="M913 150 L937 150 L931 130 L919 130 Z" fill="#d81b60"/>
+                        <line x1="890" y1="0" x2="890" y2="105"/><path d="M878 105 L902 105 L896 85 L884 85 Z" fill="#fbc02d"/>
+                    </g>
+                </svg>
+            </div>
+
+            <!-- Mehendi Center Details Card -->
+            <div class="relative z-10 max-w-xl w-full bg-white/80 backdrop-blur-md rounded-3xl p-8 sm:p-12 text-center shadow-xl border-2 border-[#8bc34a]/40 my-auto reveal">
+                <span class="inline-block px-4 py-1 rounded-full bg-[#e8f5e9] text-[#2e7d32] text-xs font-semibold tracking-widest uppercase mb-3">
+                    Day 1 • Morning Celebration
+                </span>
+                <h2 class="font-display text-5xl sm:text-6xl text-maroon mb-6">Mehendi</h2>
+                
+                <div class="space-y-2 font-display text-xl sm:text-2xl text-maroon">
+                    <p>1<sup class="text-sm">st</sup> December 2026</p>
+                    <p>Tuesday</p>
+                    <p class="text-[#b38228]">09:30 Am</p>
+                </div>
+
+                <div class="my-6 h-px w-32 bg-gradient-to-r from-transparent via-maroon/40 to-transparent mx-auto"></div>
+
+                <h3 class="font-display text-xl text-maroon mb-1">Venue</h3>
+                <p class="font-display text-lg sm:text-xl text-maroon/90">
+                    At our Residence Raghunathpur, Baripada
+                </p>
+            </div>
+
+            <!-- Bottom White Balcony Railing, Colorful Umbrella, Red Cushions, Dholak & Mehendi Bowls -->
+            <div class="w-full max-w-4xl mt-8 pointer-events-none reveal reveal-delay-1">
+                <svg viewBox="0 0 800 170" class="w-full h-auto">
+                    <!-- White Terrace Balustrade -->
+                    <rect x="0" y="105" width="800" height="8" fill="#e0e0e0"/>
+                    <rect x="0" y="145" width="800" height="10" fill="#bdbdbd"/>
+                    <g fill="#eeeeee">
+                        <rect x="40" y="113" width="10" height="32"/><rect x="80" y="113" width="10" height="32"/>
+                        <rect x="120" y="113" width="10" height="32"/><rect x="160" y="113" width="10" height="32"/>
+                        <rect x="200" y="113" width="10" height="32"/><rect x="240" y="113" width="10" height="32"/>
+                        <rect x="280" y="113" width="10" height="32"/><rect x="320" y="113" width="10" height="32"/>
+                        <rect x="360" y="113" width="10" height="32"/><rect x="400" y="113" width="10" height="32"/>
+                        <rect x="440" y="113" width="10" height="32"/><rect x="480" y="113" width="10" height="32"/>
+                        <rect x="520" y="113" width="10" height="32"/><rect x="560" y="113" width="10" height="32"/>
+                        <rect x="600" y="113" width="10" height="32"/><rect x="640" y="113" width="10" height="32"/>
+                    </g>
+                    <!-- Green Lawn Base -->
+                    <rect x="0" y="150" width="800" height="20" fill="#689f38"/>
+
+                    <!-- Rajasthani Festive Umbrella & Red Cushions (Left) -->
+                    <line x1="115" y1="45" x2="130" y2="145" stroke="#ff8f00" stroke-width="5"/>
+                    <path d="M35 60 Q115 -10 195 60 Z" fill="#f57f17" stroke="#ad1457" stroke-width="3"/>
+                    <path d="M55 55 Q115 15 175 55 Z" fill="#d81b60"/>
+                    <rect x="30" y="130" width="90" height="24" rx="8" fill="#c62828" stroke="#fbc02d" stroke-width="2"/>
+                    <rect x="125" y="132" width="85" height="22" rx="8" fill="#b71c1c" stroke="#fbc02d" stroke-width="2"/>
+
+                    <!-- Dholak Drums & Mehendi Bowls (Right) -->
+                    <!-- Dholak: barrel body, rope lacing, two drum heads -->
+                    <path d="M598 118 Q640 108 682 120 L682 148 Q640 156 598 150 Z" fill="#8d6e63" stroke="#5d4037" stroke-width="3"/>
+                    <path d="M606 119 L620 150 L634 115 L648 152 L662 115 L676 148" stroke="#ffd54f" stroke-width="2" fill="none" stroke-linejoin="round"/>
+                    <ellipse cx="598" cy="134" rx="9" ry="17" fill="#fff8e1" stroke="#5d4037" stroke-width="2.5"/>
+                    <ellipse cx="682" cy="134" rx="8" ry="15" fill="#fff8e1" stroke="#5d4037" stroke-width="2.5"/>
+                    <circle cx="598" cy="134" r="4" fill="#5d4037"/>
+                    <circle cx="715" cy="145" r="22" fill="#26c6da"/><circle cx="715" cy="135" r="16" fill="#7cb342"/>
+                    <circle cx="755" cy="148" r="20" fill="#ab47bc"/><circle cx="755" cy="138" r="14" fill="#ffa000"/>
+                </svg>
+            </div>
+        </section>
+
+        <!-- PAGE 5: SANGEET (0:25 - 0:29) -->
+        <section class="relative min-h-screen w-full bg-sangeet-pattern text-gold-light py-20 px-4 flex flex-col items-center justify-between overflow-hidden border-t-4 border-gold">
+            
+            <!-- Subtle Floating Musical Notes Background Overlay -->
+            <div class="absolute inset-0 pointer-events-none opacity-15 flex justify-around items-center text-5xl text-gold select-none">
+                <span>♪</span><span>♫</span><span>♬</span><span>♩</span><span>♪</span>
+            </div>
+
+            <!-- Golden Stage Drapes & Glowing Hanging Bulbs -->
+            <!-- Golden Stage Drapes & Glowing Hanging Bulbs -->
+            <div class="w-full max-w-6xl pointer-events-none -mt-20">
+                <svg viewBox="0 0 1000 220" class="w-full h-auto">
+                    <path d="M0 0 L280 0 Q180 120 40 220 L0 220 Z" fill="url(#goldGrad)" opacity="0.9"/>
+                    <path d="M1000 0 L720 0 Q820 120 960 220 L1000 220 Z" fill="url(#goldGrad)" opacity="0.9"/>
+
+                    <defs>
+                        <radialGradient id="sgOrb" cx="35%" cy="30%" r="75%">
+                            <stop offset="0%" stop-color="#fffbe0"/>
+                            <stop offset="55%" stop-color="#ffd54f"/>
+                            <stop offset="100%" stop-color="#b8860b"/>
+                        </radialGradient>
+                        <radialGradient id="sgHalo">
+                            <stop offset="0%" stop-color="#ffe082" stop-opacity="0.75"/>
+                            <stop offset="100%" stop-color="#ffe082" stop-opacity="0"/>
+                        </radialGradient>
+                        <g id="sg-orb">
+                            <!-- Cap -->
+                            <path d="M-5 -17 L5 -17 L7 -11 L-7 -11 Z" fill="#b8860b" stroke="#ffe082" stroke-width="1"/>
+                            <!-- Glass orb -->
+                            <circle cx="0" cy="0" r="12" fill="url(#sgOrb)" stroke="#b8860b" stroke-width="1.2"/>
+                            <path d="M-12 1 Q0 6 12 1" stroke="#b8860b" stroke-width="1.2" fill="none"/>
+                            <ellipse cx="-4" cy="-4.5" rx="3.2" ry="2" fill="#ffffff" opacity="0.85"/>
+                            <!-- Tassel -->
+                            <path d="M-4 12 L0 23 L4 12 Z" fill="#d4af37" stroke="#8a620a" stroke-width="0.8"/>
+                            <circle cx="0" cy="25" r="2.2" fill="#ffe082"/>
+                        </g>
+                    </defs>
+
+                    <!-- Bulb 1 -->
+                    <g class="sg-swing" style="animation-delay:0s">
+                        <line x1="360" y1="0" x2="360" y2="48" stroke="#ffe082" stroke-width="2"/>
+                        <circle class="sg-halo" cx="360" cy="65" r="26" fill="url(#sgHalo)"/>
+                        <use href="#sg-orb" x="360" y="65"/>
+                    </g>
+                    <!-- Bulb 2 -->
+                    <g class="sg-swing" style="animation-delay:0.6s">
+                        <line x1="430" y1="0" x2="430" y2="78" stroke="#ffe082" stroke-width="2"/>
+                        <circle class="sg-halo" cx="430" cy="95" r="28" fill="url(#sgHalo)" style="animation-delay:0.4s"/>
+                        <use href="#sg-orb" x="430" y="95"/>
+                    </g>
+                    <!-- Bulb 3 -->
+                    <g class="sg-swing" style="animation-delay:1.2s">
+                        <line x1="500" y1="0" x2="500" y2="38" stroke="#ffe082" stroke-width="2"/>
+                        <circle class="sg-halo" cx="500" cy="55" r="26" fill="url(#sgHalo)" style="animation-delay:0.8s"/>
+                        <use href="#sg-orb" x="500" y="55"/>
+                    </g>
+                    <!-- Bulb 4 -->
+                    <g class="sg-swing" style="animation-delay:0.3s">
+                        <line x1="570" y1="0" x2="570" y2="78" stroke="#ffe082" stroke-width="2"/>
+                        <circle class="sg-halo" cx="570" cy="95" r="28" fill="url(#sgHalo)" style="animation-delay:1.2s"/>
+                        <use href="#sg-orb" x="570" y="95"/>
+                    </g>
+                    <!-- Bulb 5 -->
+                    <g class="sg-swing" style="animation-delay:0.9s">
+                        <line x1="640" y1="0" x2="640" y2="48" stroke="#ffe082" stroke-width="2"/>
+                        <circle class="sg-halo" cx="640" cy="65" r="26" fill="url(#sgHalo)" style="animation-delay:1.6s"/>
+                        <use href="#sg-orb" x="640" y="65"/>
+                    </g>
+
+                </svg>
+            </div>
+
+            <!-- Sangeet Content Card -->
+            <div class="relative z-10 max-w-xl w-full bg-[#041a0d]/90 backdrop-blur-md rounded-3xl p-8 sm:p-12 text-center shadow-2xl border border-gold/60 my-auto reveal">
+                <span class="inline-block px-4 py-1 rounded-full bg-gold/20 text-gold-light text-xs font-semibold tracking-widest uppercase mb-3 border border-gold/30">
+                    Day 1 • Evening Musical Night
+                </span>
+                <h2 class="font-display text-5xl sm:text-6xl text-gold-light mb-6 drop-shadow">Sangeet</h2>
+                
+                <div class="space-y-2 font-display text-xl sm:text-2xl text-gold-light">
+                    <p>1<sup class="text-sm">st</sup> December 2026</p>
+                    <p>Tuesday</p>
+                    <p class="text-white">07:30 Pm</p>
+                </div>
+
+                <div class="my-6 h-px w-32 bg-gradient-to-r from-transparent via-gold to-transparent mx-auto"></div>
+
+                <h3 class="font-display text-xl text-gold-light mb-1">Venue</h3>
+                <p class="font-display text-lg sm:text-xl text-gold-pale">
+                    At our Residence Raghunathpur, Baripada
+                </p>
+            </div>
+
+            <!-- Bottom Golden Arch Backdrop, Royal Peacocks & Dholaks (Matching 0:28) -->
+            <div class="w-full max-w-4xl mt-8 pointer-events-none reveal reveal-delay-1">
+                <svg viewBox="0 0 800 220" class="w-full h-auto">
+                    <!-- Side Golden Trellis Arches -->
+                    <path d="M120 220 L120 90 Q180 30 240 90 L240 220" fill="none" stroke="#d4af37" stroke-width="3"/>
+                    <path d="M560 220 L560 90 Q620 30 680 90 L680 220" fill="none" stroke="#d4af37" stroke-width="3"/>
+                    <!-- Center Solid Gold Royal Arch -->
+                    <path d="M290 220 L290 95 C290 15, 510 15, 510 95 L510 220 Z" fill="#c59b27" stroke="#ffe082" stroke-width="3"/>
+                    
+                    <!-- Left & Right Golden Peacocks & Dholak Drums -->
+                    <defs>
+                        <g id="sangeet-peacock">
+                            <!-- Tail fan with eye feathers -->
+                            <g stroke="#d4af37" stroke-width="1.2">
+                                <g transform="rotate(-105 20 70)"><ellipse cx="20" cy="30" rx="8" ry="28" fill="#166534"/><circle cx="20" cy="8" r="5" fill="#1d4ed8"/><circle cx="20" cy="8" r="2" fill="#facc15" stroke="none"/></g>
+                                <g transform="rotate(-85 20 70)"><ellipse cx="20" cy="30" rx="8" ry="28" fill="#15803d"/><circle cx="20" cy="8" r="5" fill="#1d4ed8"/><circle cx="20" cy="8" r="2" fill="#facc15" stroke="none"/></g>
+                                <g transform="rotate(-65 20 70)"><ellipse cx="20" cy="30" rx="8" ry="28" fill="#166534"/><circle cx="20" cy="8" r="5" fill="#1d4ed8"/><circle cx="20" cy="8" r="2" fill="#facc15" stroke="none"/></g>
+                                <g transform="rotate(-45 20 70)"><ellipse cx="20" cy="30" rx="8" ry="28" fill="#15803d"/><circle cx="20" cy="8" r="5" fill="#1d4ed8"/><circle cx="20" cy="8" r="2" fill="#facc15" stroke="none"/></g>
+                                <g transform="rotate(-25 20 70)"><ellipse cx="20" cy="30" rx="8" ry="28" fill="#166534"/><circle cx="20" cy="8" r="5" fill="#1d4ed8"/><circle cx="20" cy="8" r="2" fill="#facc15" stroke="none"/></g>
+                                <g transform="rotate(-5 20 70)"><ellipse cx="20" cy="30" rx="8" ry="28" fill="#15803d"/><circle cx="20" cy="8" r="5" fill="#1d4ed8"/><circle cx="20" cy="8" r="2" fill="#facc15" stroke="none"/></g>
+                                <g transform="rotate(15 20 70)"><ellipse cx="20" cy="30" rx="8" ry="28" fill="#166534"/><circle cx="20" cy="8" r="5" fill="#1d4ed8"/><circle cx="20" cy="8" r="2" fill="#facc15" stroke="none"/></g>
+                            </g>
+                            <!-- Legs -->
+                            <path d="M20 80 L18 100 M30 80 L32 100" stroke="#b45309" stroke-width="2.5" stroke-linecap="round"/>
+                            <!-- Body -->
+                            <ellipse cx="25" cy="62" rx="15" ry="21" fill="#0d9488" stroke="#d4af37" stroke-width="1.5"/>
+                            <path d="M13 58 Q25 80 37 58" stroke="#facc15" stroke-width="2" stroke-dasharray="3 2" fill="none"/>
+                            <!-- Neck -->
+                            <path d="M30 50 C38 40, 40 30, 40 22" stroke="#1d4ed8" stroke-width="9" fill="none" stroke-linecap="round"/>
+                            <path d="M33 38 Q40 43 46 36" stroke="#facc15" stroke-width="2" stroke-dasharray="2 2" fill="none"/>
+                            <!-- Head, beak, eye -->
+                            <circle cx="40" cy="17" r="6.5" fill="#1d4ed8"/>
+                            <path d="M45 16 L53 18 L45 21 Z" fill="#f59e0b"/>
+                            <circle cx="42" cy="15" r="1.3" fill="#ffffff"/>
+                            <!-- Crown crest -->
+                            <path d="M40 11 L36 0 M40 11 L40 -3 M40 11 L44 0" stroke="#d4af37" stroke-width="1.5" stroke-linecap="round"/>
+                            <circle cx="36" cy="-1" r="2" fill="#facc15"/><circle cx="40" cy="-4" r="2" fill="#facc15"/><circle cx="44" cy="-1" r="2" fill="#facc15"/>
+                        </g>
+                    </defs>
+
+                    <!-- Left peacock + dholak -->
+                    <g transform="translate(155, 115)">
+                        <use href="#sangeet-peacock"/>
+                        <ellipse cx="-100" cy="88" rx="36" ry="19" fill="#8d6e63" stroke="#d4af37" stroke-width="2"/>
+                        <ellipse cx="-100" cy="88" rx="22" ry="11" fill="none" stroke="#ffd54f" stroke-width="1.5"/>
+                    </g>
+                    <!-- Right peacock + dholak (mirrored) -->
+                    <g transform="translate(645, 115) scale(-1, 1)">
+                        <use href="#sangeet-peacock"/>
+                        <ellipse cx="-100" cy="88" rx="36" ry="19" fill="#8d6e63" stroke="#d4af37" stroke-width="2"/>
+                        <ellipse cx="-100" cy="88" rx="22" ry="11" fill="none" stroke="#ffd54f" stroke-width="1.5"/>
+                    </g>
+                </svg>
+            </div>
+        </section>
+
+        <!-- PAGE 6: HALDI (0:30 - 0:34) -->
+        <section class="relative min-h-screen w-full bg-haldi-texture py-20 px-4 flex flex-col items-center justify-between overflow-hidden border-t-4 border-gold">
+            
+            <!-- Animated Falling Marigold Petals (Matching 0:30 - 0:34) -->
+            <div class="absolute inset-0 pointer-events-none overflow-hidden">
+                <div class="petal left-[12%]" style="animation-duration: 9s; animation-delay: 0s;">
+                    <svg width="26" height="18" viewBox="0 0 26 18"><ellipse cx="13" cy="9" rx="12" ry="7" fill="#f97316" opacity="0.8"/></svg>
+                </div>
+                <div class="petal left-[28%]" style="animation-duration: 11s; animation-delay: 2s;">
+                    <svg width="22" height="16" viewBox="0 0 26 18"><ellipse cx="13" cy="9" rx="10" ry="6" fill="#fb923c" opacity="0.85"/></svg>
+                </div>
+                <div class="petal left-[55%]" style="animation-duration: 8.5s; animation-delay: 1s;">
+                    <svg width="26" height="18" viewBox="0 0 26 18"><ellipse cx="13" cy="9" rx="12" ry="7" fill="#ea580c" opacity="0.75"/></svg>
+                </div>
+                <div class="petal left-[76%]" style="animation-duration: 10s; animation-delay: 3s;">
+                    <svg width="24" height="16" viewBox="0 0 26 18"><ellipse cx="13" cy="9" rx="11" ry="6" fill="#f97316" opacity="0.8"/></svg>
+                </div>
+                <div class="petal left-[88%]" style="animation-duration: 12s; animation-delay: 0.5s;">
+                    <svg width="20" height="14" viewBox="0 0 26 18"><ellipse cx="13" cy="9" rx="9" ry="5" fill="#fb923c" opacity="0.85"/></svg>
+                </div>
+            </div>
+
+            <!-- Hanging Marigold Garlands & Floral hangings -->
+            <div class="w-full max-w-5xl pointer-events-none -mt-16 opacity-85">
+                <svg viewBox="0 0 1000 180" class="w-full h-auto">
+                    <g stroke="#d49b17" stroke-width="4" stroke-dasharray="10 8">
+                        <line x1="80" y1="0" x2="80" y2="170"/>
+                        <line x1="200" y1="0" x2="200" y2="140"/>
+                        <line x1="340" y1="0" x2="340" y2="160"/>
+                        <line x1="660" y1="0" x2="660" y2="160"/>
+                        <line x1="800" y1="0" x2="800" y2="140"/>
+                        <line x1="920" y1="0" x2="920" y2="170"/>
+                    </g>
+                    <circle cx="200" cy="140" r="24" fill="none" stroke="#c58b14" stroke-width="2"/>
+                    <circle cx="800" cy="140" r="24" fill="none" stroke="#c58b14" stroke-width="2"/>
+                </svg>
+            </div>
+
+            <!-- Haldi Content Card -->
+            <div class="relative z-10 max-w-xl w-full bg-[#fffbeb]/90 backdrop-blur-md rounded-3xl p-8 sm:p-12 text-center shadow-xl border-2 border-[#d97706]/30 my-auto reveal">
+                <span class="inline-block px-4 py-1 rounded-full bg-amber-200/80 text-maroon text-xs font-semibold tracking-widest uppercase mb-3">
+                    Day 2 • Morning Ritual
+                </span>
+                <h2 class="font-display text-5xl sm:text-6xl text-maroon mb-6">Haldi</h2>
+                
+                <div class="space-y-2 font-display text-xl sm:text-2xl text-maroon">
+                    <p>2nd December 2026</p>
+                    <p>Wednesday</p>
+                    <p class="text-[#b45309]">09:30 Am</p>
+                </div>
+
+                <div class="my-6 h-px w-32 bg-gradient-to-r from-transparent via-maroon/40 to-transparent mx-auto"></div>
+
+                <h3 class="font-display text-xl text-maroon mb-1">Venue</h3>
+                <p class="font-display text-lg sm:text-xl text-maroon/90">
+                    At our Residence Raghunathpur, Baripada
+                </p>
+            </div>
+
+            <!-- Bottom White Jali Arch, Decorative Trees, Flower Baskets & Haldi Chowki/Thali (Matching 0:32) -->
+            <div class="w-full max-w-4xl mt-8 pointer-events-none reveal reveal-delay-1">
+                <svg viewBox="0 0 800 220" class="w-full h-auto">
+                    <!-- Decorative Trees & Flower Baskets on Left & Right -->
+                    <!-- Left tree -->
+                    <g>
+                        <path d="M120 160 L120 65 M120 110 L85 80 M120 95 L155 70" stroke="#5c2d16" stroke-width="5" fill="none" stroke-linecap="round"/>
+                        <circle cx="120" cy="52" r="30" fill="#4d7c0f"/>
+                        <circle cx="86" cy="76" r="22" fill="#65a30d"/>
+                        <circle cx="156" cy="70" r="22" fill="#65a30d"/>
+                        <circle cx="105" cy="38" r="16" fill="#3f6212"/>
+                        <circle cx="138" cy="40" r="15" fill="#3f6212"/>
+                        <!-- Marigolds -->
+                        <g>
+                            <circle cx="110" cy="48" r="5" fill="#f97316"/><circle cx="132" cy="58" r="5" fill="#facc15"/>
+                            <circle cx="120" cy="30" r="4.5" fill="#facc15"/><circle cx="96" cy="64" r="5" fill="#facc15"/>
+                            <circle cx="80" cy="82" r="5" fill="#f97316"/><circle cx="160" cy="76" r="5" fill="#f97316"/>
+                            <circle cx="148" cy="62" r="4.5" fill="#facc15"/><circle cx="100" cy="86" r="4.5" fill="#f97316"/>
+                            <circle cx="168" cy="64" r="4" fill="#facc15"/><circle cx="130" cy="36" r="4" fill="#f97316"/>
+                        </g>
+                        <!-- Hanging marigold strands -->
+                        <g stroke="#f59e0b" stroke-width="2.5" stroke-dasharray="3 3" fill="none">
+                            <path d="M92 94 L92 125"/><path d="M148 90 L148 122"/><path d="M120 80 L120 110"/>
+                        </g>
+                    </g>
+
+                    <!-- Right tree -->
+                    <g>
+                        <path d="M680 160 L680 65 M680 110 L645 80 M680 95 L715 70" stroke="#5c2d16" stroke-width="5" fill="none" stroke-linecap="round"/>
+                        <circle cx="680" cy="52" r="30" fill="#4d7c0f"/>
+                        <circle cx="644" cy="76" r="22" fill="#65a30d"/>
+                        <circle cx="714" cy="70" r="22" fill="#65a30d"/>
+                        <circle cx="662" cy="38" r="15" fill="#3f6212"/>
+                        <circle cx="698" cy="40" r="16" fill="#3f6212"/>
+                        <g>
+                            <circle cx="670" cy="48" r="5" fill="#facc15"/><circle cx="692" cy="58" r="5" fill="#f97316"/>
+                            <circle cx="680" cy="30" r="4.5" fill="#f97316"/><circle cx="656" cy="64" r="5" fill="#f97316"/>
+                            <circle cx="638" cy="82" r="5" fill="#facc15"/><circle cx="720" cy="76" r="5" fill="#facc15"/>
+                            <circle cx="708" cy="62" r="4.5" fill="#f97316"/><circle cx="660" cy="86" r="4.5" fill="#facc15"/>
+                            <circle cx="728" cy="64" r="4" fill="#f97316"/><circle cx="690" cy="36" r="4" fill="#facc15"/>
+                        </g>
+                        <g stroke="#f59e0b" stroke-width="2.5" stroke-dasharray="3 3" fill="none">
+                            <path d="M652 94 L652 125"/><path d="M708 90 L708 122"/><path d="M680 80 L680 110"/>
+                        </g>
+                    </g>
+                    <!-- White Carved Jali Arch in Center -->
+                    <path d="M310 200 L310 85 Q400 10 490 85 L490 200 Z" fill="#ffffff" stroke="#e6c762" stroke-width="4"/>
+                    <path d="M335 190 L335 95 Q400 35 465 95 L465 190 Z" fill="#fef3c7" stroke="#d4af37" stroke-width="1.5" stroke-dasharray="6 4"/>
+                    <!-- Left & Right Brass Urli / Chowki & Haldi Thali -->
+                    <ellipse cx="170" cy="185" rx="115" ry="28" fill="#d99b26" stroke="#9a6708" stroke-width="3"/>
+                    <rect x="125" y="152" width="90" height="25" fill="#991b1b" rx="3"/>
+                    <ellipse cx="630" cy="185" rx="115" ry="28" fill="#d99b26" stroke="#9a6708" stroke-width="3"/>
+                    <rect x="590" y="152" width="80" height="22" fill="#f59e0b" stroke="#78350f" stroke-width="2" rx="3"/>
+                </svg>
+            </div>
+        </section>
+
+        <!-- PAGE 7: WEDDING & RECEPTION (0:35 - 0:40) -->
+        <section class="relative min-h-screen w-full bg-[#faeedc] py-20 px-4 flex flex-col items-center justify-between overflow-hidden border-t-4 border-gold">
+            
+            <!-- Ornate Floral Mughal Arch Header (Matching 0:38) -->
+            <div class="w-full max-w-5xl pointer-events-none -mt-16">
+                <svg viewBox="0 0 1000 190" class="w-full h-auto">
+                    <path d="M0 180 C120 40, 350 10, 500 110 C650 10, 880 40, 1000 180 L1000 0 L0 0 Z" fill="#a7cbb6" stroke="#b45309" stroke-width="4"/>
+                    <!-- Pink Lotus Motifs in Corners -->
+                    <circle cx="90" cy="55" r="32" fill="#f48fb1" stroke="#ad1457" stroke-width="2"/>
+                    <circle cx="90" cy="55" r="14" fill="#fbc02d"/>
+                    <circle cx="910" cy="55" r="32" fill="#f48fb1" stroke="#ad1457" stroke-width="2"/>
+                    <circle cx="910" cy="55" r="14" fill="#fbc02d"/>
+                </svg>
+            </div>
+
+            <!-- Wedding & Reception Card -->
+            <div class="relative z-10 max-w-2xl w-full bg-white/85 backdrop-blur-md rounded-3xl p-8 sm:p-12 text-center shadow-2xl border-2 border-maroon/20 my-auto reveal">
+                <div class="mx-auto w-12 h-12 mb-3 text-maroon flex items-center justify-center">
+                    <svg viewBox="0 0 64 64" class="w-10 h-10">
+                        <path d="M32 6 L40 18 L24 18 Z M22 22 C12 22 12 38 22 38 M42 22 C52 22 52 38 42 38 M28 22 C28 42 34 48 42 46" stroke="#6b0f1a" stroke-width="3" fill="none" stroke-linecap="round"/>
+                    </svg>
+                </div>
+
+                <span class="inline-block px-4 py-1 rounded-full bg-maroon/10 text-maroon text-xs font-semibold tracking-widest uppercase mb-3">
+                    Day 2 • The Royal Union
+                </span>
+
+                <h2 class="font-display text-4xl sm:text-6xl text-maroon mb-6">
+                    Wedding &amp; Reception
+                </h2>
+                
+                <div class="space-y-2 font-display text-xl sm:text-2xl text-maroon">
+                    <p>2nd December 2026</p>
+                    <p>Wednesday</p>
+                    <p class="text-maroon-light">07:30 Pm Onwards</p>
+                </div>
+
+                <div class="my-6 h-px w-36 bg-gradient-to-r from-transparent via-maroon/40 to-transparent mx-auto"></div>
+
+                <p class="text-xs uppercase tracking-widest text-stone-500 mb-1">Marriage Venue</p>
+                <p class="font-display text-xl sm:text-2xl text-maroon">
+                    Swastik Garden, Deula Sahi, Baripada, Mayurbhanj
+                </p>
+            </div>
+
+            <!-- Bride & Groom in Wedding Attire Holding Hands with Mandap & White Railing (Matching 0:39) -->
+            <div class="w-full max-w-3xl mt-8 pointer-events-none reveal reveal-delay-1">
+                <svg viewBox="0 -30 700 250" class="w-full h-auto">
+                <!-- Lawn and red carpet -->
+                <rect x="0" y="185" width="700" height="35" fill="#dcedc8"/>
+                <rect x="150" y="185" width="360" height="35" fill="#9f1239"/>
+                <rect x="150" y="185" width="360" height="4" fill="#e6c762"/>
+
+                <!-- Mandap: pillars, drapes, roof -->
+                <rect x="180" y="30" width="10" height="160" fill="#b45309" stroke="#e6c762" stroke-width="1.5"/>
+                <rect x="470" y="30" width="10" height="160" fill="#b45309" stroke="#e6c762" stroke-width="1.5"/>
+                <path d="M190 42 Q215 110 190 190 L192 190 L192 42 Z" fill="#fef3c7"/>
+                <path d="M470 42 Q445 110 470 190 L468 190 L468 42 Z" fill="#fef3c7"/>
+                <path d="M160 32 L330 -22 L500 32 Z" fill="#d97706" stroke="#6b0f1a" stroke-width="2"/>
+                <path d="M330 -22 L330 32 M245 5 L250 32 M415 5 L410 32" stroke="#6b0f1a" stroke-width="1.5"/>
+                <rect x="160" y="32" width="340" height="10" fill="#6b0f1a"/>
+                <line x1="165" y1="47" x2="495" y2="47" stroke="#e6c762" stroke-width="6" stroke-dasharray="2 8" stroke-linecap="round"/>
+                <circle cx="330" cy="-24" r="4" fill="#fde047"/>
+
+                <!-- Marigold garlands on pillars -->
+                <path d="M185 42 L185 140" stroke="#f97316" stroke-width="6" stroke-dasharray="5 4"/>
+                <path d="M475 42 L475 140" stroke="#f97316" stroke-width="6" stroke-dasharray="5 4"/>
+                <path d="M197 42 L197 120" stroke="#ec4899" stroke-width="5" stroke-dasharray="4 5"/>
+                <path d="M463 42 L463 120" stroke="#ec4899" stroke-width="5" stroke-dasharray="4 5"/>
+
+                <!-- Fairy-light swags -->
+                <path d="M190 52 Q260 85 330 52 Q400 85 470 52" stroke="#fff3b0" stroke-width="3.5" stroke-dasharray="1 8" stroke-linecap="round" fill="none">
+                    <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite"/>
+                </path>
+
+                <!-- Kalash on both sides -->
+                <g>
+                    <path d="M110 190 Q104 165 112 158 L128 158 Q136 165 130 190 Z" fill="#d99b26" stroke="#9a6708" stroke-width="2"/>
+                    <path d="M108 152 Q114 134 120 146 Q126 134 132 152 Z" fill="#4d7c0f"/>
+                    <circle cx="120" cy="150" r="7" fill="#8d6e63"/>
+                </g>
+                <g>
+                    <path d="M530 190 Q524 165 532 158 L548 158 Q556 165 550 190 Z" fill="#d99b26" stroke="#9a6708" stroke-width="2"/>
+                    <path d="M528 152 Q534 134 540 146 Q546 134 552 152 Z" fill="#4d7c0f"/>
+                    <circle cx="540" cy="150" r="7" fill="#8d6e63"/>
+                </g>
+
+                <!-- Flower clusters -->
+                <g>
+                    <circle cx="40" cy="190" r="12" fill="#f9a8d4"/><circle cx="58" cy="196" r="10" fill="#f472b6"/><circle cx="26" cy="198" r="9" fill="#fde047"/>
+                    <circle cx="660" cy="190" r="12" fill="#f9a8d4"/><circle cx="642" cy="196" r="10" fill="#f472b6"/><circle cx="674" cy="198" r="9" fill="#fde047"/>
+                </g>
+
+                <!-- Diyas on the carpet -->
+                <g>
+                    <ellipse cx="205" cy="208" rx="9" ry="4" fill="#d97706"/><ellipse cx="205" cy="202" rx="3" ry="6" fill="#fde047"/>
+                    <ellipse cx="270" cy="212" rx="9" ry="4" fill="#d97706"/><ellipse cx="270" cy="206" rx="3" ry="6" fill="#fde047"/>
+                    <ellipse cx="390" cy="212" rx="9" ry="4" fill="#d97706"/><ellipse cx="390" cy="206" rx="3" ry="6" fill="#fde047"/>
+                    <ellipse cx="455" cy="208" rx="9" ry="4" fill="#d97706"/><ellipse cx="455" cy="202" rx="3" ry="6" fill="#fde047"/>
+                </g>
+
+                <!-- Groom in Sherwani & Turban (Left) -->
+                <g transform="translate(230, 25)">
+                    <rect x="39" y="50" width="12" height="9" fill="#d99b72"/>
+                    <ellipse cx="45" cy="38" rx="12" ry="14" fill="#d99b72"/>
+                    <path d="M27 33 C25 6, 65 6, 63 33 Z" fill="#e6cfa8" stroke="#c59b27" stroke-width="1.5"/>
+                    <circle cx="45" cy="12" r="2.5" fill="#c59b27"/>
+                    <circle cx="40" cy="38" r="1.4" fill="#2b1d12"/>
+                    <circle cx="50" cy="38" r="1.4" fill="#2b1d12"/>
+                    <path d="M45 39 L44 43 Q45 44 46 43" stroke="#b97a52" stroke-width="1" fill="none"/>
+                    <path d="M40 46 Q45 50 50 46" stroke="#8b1e2b" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+                    <path d="M25 57 L65 57 L70 175 L20 175 Z" fill="#efe2c2" stroke="#c59b27" stroke-width="2"/>
+                    <path d="M25 57 Q45 100 65 57 L68 130 L22 110 Z" fill="#6b0f1a"/>
+                    <line x1="60" y1="75" x2="98" y2="100" stroke="#efe2c2" stroke-width="9" stroke-linecap="round"/>
+                </g>
+
+                <!-- Bride in Royal Maroon Lehenga (Right) -->
+                <g transform="translate(335, 33)">
+                    <ellipse cx="45" cy="28" rx="14" ry="15" fill="#1e1b18"/>
+                    <path d="M29 52 Q45 45 61 52 L74 150 L16 150 Z" fill="#6b0f1a" stroke="#e6c762" stroke-width="2"/>
+                    <path d="M37 52 Q45 60 53 52" stroke="#e6c762" stroke-width="2.5" fill="none"/>
+                    <rect x="40" y="38" width="10" height="13" fill="#d99b72"/>
+                    <ellipse cx="45" cy="30" rx="11" ry="13" fill="#d99b72"/>
+                    <path d="M33 28 Q45 8 57 28 Q45 19 33 28 Z" fill="#1e1b18"/>
+                    <circle cx="45" cy="23" r="1.4" fill="#8b1e2b"/>
+                    <circle cx="41" cy="29" r="1.2" fill="#2b1d12"/>
+                    <circle cx="49" cy="29" r="1.2" fill="#2b1d12"/>
+                    <path d="M45 30 L44 34 Q45 35 46 34" stroke="#b97a52" stroke-width="1" fill="none"/>
+                    <path d="M41 37 Q45 41 49 37" stroke="#8b1e2b" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+                    <line x1="35" y1="72" x2="-5" y2="94" stroke="#d99b72" stroke-width="8" stroke-linecap="round"/>
+                </g>
+
+                <!-- Falling rose petals -->
+                <circle cx="240" cy="-20" r="3" fill="#fda4af"><animate attributeName="cy" from="-20" to="200" dur="6s" repeatCount="indefinite"/></circle>
+                <circle cx="300" cy="-20" r="2.5" fill="#fb7185"><animate attributeName="cy" from="-20" to="200" dur="7.5s" begin="1s" repeatCount="indefinite"/></circle>
+                <circle cx="360" cy="-20" r="3" fill="#fda4af"><animate attributeName="cy" from="-20" to="200" dur="5.5s" begin="2s" repeatCount="indefinite"/></circle>
+                <circle cx="420" cy="-20" r="2.5" fill="#fde047"><animate attributeName="cy" from="-20" to="200" dur="7s" begin="0.5s" repeatCount="indefinite"/></circle>
+                <circle cx="270" cy="-20" r="2.5" fill="#fde047"><animate attributeName="cy" from="-20" to="200" dur="8s" begin="3s" repeatCount="indefinite"/></circle>
+                <circle cx="390" cy="-20" r="3" fill="#fb7185"><animate attributeName="cy" from="-20" to="200" dur="6.5s" begin="2.5s" repeatCount="indefinite"/></circle>
+            </svg>
+            </div>
+        </section>
+    </div>
+
+    <!-- ==========================================
+         PAGE 8: GRAND VENUE SPOTLIGHT (0:41 - 0:46)
+         ========================================== -->
+    <section id="venue" class="relative min-h-screen w-full bg-gradient-to-b from-[#69d2c5] via-[#f6d083] to-[#e59866] py-20 px-4 flex flex-col items-center justify-between overflow-hidden">
+        
+        <!-- Fireworks Canvas Overlay -->
+        <canvas id="fireworksCanvas" class="absolute inset-0 w-full h-full pointer-events-none z-0"></canvas>
+
+        <!-- Hanging Moroccan Lanterns (Top Left & Right as seen in 0:44) -->
+        <div class="w-full max-w-6xl flex justify-between px-4 sm:px-12 pointer-events-none z-10 -mt-20">
+            <div class="flex gap-6 sm:gap-12">
+                <svg width="50" height="190" viewBox="0 0 60 220" class="animate-sway origin-top">
+                    <line x1="30" y1="0" x2="30" y2="110" stroke="#4a2c11" stroke-width="2"/>
+                    <path d="M15 125 L45 125 L38 110 L22 110 Z" fill="#5c3818"/>
+                    <rect x="15" y="125" width="30" height="45" fill="#ffecb3" stroke="#5c3818" stroke-width="3"/>
+                    <path d="M15 170 L45 170 L30 190 Z" fill="#5c3818"/>
+                </svg>
+                <svg width="44" height="150" viewBox="0 0 60 220" class="animate-sway origin-top" style="animation-delay: 1s;">
+                    <line x1="30" y1="0" x2="30" y2="80" stroke="#4a2c11" stroke-width="2"/>
+                    <path d="M15 95 L45 95 L38 80 L22 80 Z" fill="#5c3818"/>
+                    <rect x="15" y="95" width="30" height="45" fill="#ffe082" stroke="#5c3818" stroke-width="3"/>
+                    <path d="M15 140 L45 140 L30 160 Z" fill="#5c3818"/>
+                </svg>
+            </div>
+            <div class="flex gap-6 sm:gap-12">
+                <svg width="44" height="150" viewBox="0 0 60 220" class="animate-sway origin-top" style="animation-delay: 0.5s;">
+                    <line x1="30" y1="0" x2="30" y2="80" stroke="#4a2c11" stroke-width="2"/>
+                    <path d="M15 95 L45 95 L38 80 L22 80 Z" fill="#5c3818"/>
+                    <rect x="15" y="95" width="30" height="45" fill="#ffe082" stroke="#5c3818" stroke-width="3"/>
+                    <path d="M15 140 L45 140 L30 160 Z" fill="#5c3818"/>
+                </svg>
+                <svg width="50" height="190" viewBox="0 0 60 220" class="animate-sway origin-top" style="animation-delay: 1.4s;">
+                    <line x1="30" y1="0" x2="30" y2="110" stroke="#4a2c11" stroke-width="2"/>
+                    <path d="M15 125 L45 125 L38 110 L22 110 Z" fill="#5c3818"/>
+                    <rect x="15" y="125" width="30" height="45" fill="#ffecb3" stroke="#5c3818" stroke-width="3"/>
+                    <path d="M15 170 L45 170 L30 190 Z" fill="#5c3818"/>
+                </svg>
+            </div>
+        </div>
+
+        <!-- Venue Details & Interactive Map Action Card -->
+        <div class="relative z-10 max-w-2xl w-full text-center my-auto px-4 reveal">
+            <h2 class="font-display text-5xl sm:text-6xl text-maroon mb-4 drop-shadow">Venue</h2>
+            <p class="font-display text-2xl sm:text-3xl text-maroon mb-8 leading-snug">
+                Swastik Garden, Deula Sahi, Baripada, Mayurbhanj
+            </p>
+
+            <!-- Action Buttons for Guests -->
+            <div class="flex flex-wrap items-center justify-center gap-4">
+                <a href="https://www.google.com/maps/search/?api=1&query=Swastik+Garden+Deula+Sahi+Baripada+Mayurbhanj" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2.5 bg-maroon text-gold-pale px-7 py-3.5 rounded-full font-medium text-sm shadow-xl hover:bg-maroon-dark transition transform hover:-translate-y-0.5">
+                    <svg class="w-5 h-5 text-gold-light" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                    </svg>
+                    <span>Open in Google Maps</span>
+                </a>
+
+                <button onclick="downloadCalendarInvite()" class="inline-flex items-center gap-2.5 bg-white/90 text-maroon border border-maroon/30 px-7 py-3.5 rounded-full font-medium text-sm shadow-xl hover:bg-white transition transform hover:-translate-y-0.5">
+                    <svg class="w-5 h-5 text-maroon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                    </svg>
+                    <span>Add to Calendar (.ics)</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Illuminated Royal Palace, Star Fountain & Dancing Peacocks (Matching 0:45) -->
+        <div class="relative z-10 w-full max-w-5xl mt-8 pointer-events-none reveal reveal-delay-1">
+            <svg viewBox="0 -70 1000 390" class="w-full h-auto drop-shadow-2xl">
+                <!-- Palace Silhouette & Illuminated Arches -->
+                <defs>
+                    <radialGradient id="palGlow">
+                        <stop offset="0%" stop-color="#ffe082" stop-opacity="0.85"/>
+                        <stop offset="100%" stop-color="#ffe082" stop-opacity="0"/>
+                    </radialGradient>
+                    <path id="pal-win" d="M0 45 L0 14 Q14 -8 28 14 L28 45 Z"/>
+                    <g id="pal-chhatri">
+                        <rect x="-14" y="0" width="28" height="4" fill="#8a620a"/>
+                        <path d="M-18 0 Q-18 -28 0 -28 Q18 -28 18 0 Z" fill="#d4af37" stroke="#8a620a" stroke-width="1.5"/>
+                        <line x1="0" y1="-28" x2="0" y2="-40" stroke="#d4af37" stroke-width="2"/>
+                        <circle cx="0" cy="-42" r="3" fill="#fef08a"/>
+                    </g>
+                </defs>
+
+                <!-- Glow behind palace -->
+                <ellipse cx="500" cy="140" rx="430" ry="150" fill="url(#palGlow)"/>
+
+                <!-- Side towers -->
+                <rect x="48" y="75" width="26" height="165" fill="#8a3629" stroke="#d4af37" stroke-width="1.5"/>
+                <rect x="926" y="75" width="26" height="165" fill="#8a3629" stroke="#d4af37" stroke-width="1.5"/>
+                <use href="#pal-chhatri" x="61" y="75"/>
+                <use href="#pal-chhatri" x="939" y="75"/>
+
+                <!-- Wings -->
+                <rect x="80" y="120" width="840" height="120" fill="#9c4132"/>
+                <rect x="80" y="112" width="840" height="10" fill="#d4af37"/>
+                <line x1="80" y1="106" x2="920" y2="106" stroke="#d4af37" stroke-width="8" stroke-dasharray="10 8"/>
+                <use href="#pal-chhatri" x="130" y="112"/>
+                <use href="#pal-chhatri" x="870" y="112"/>
+
+                <!-- Centre block -->
+                <rect x="260" y="62" width="480" height="178" fill="#b8533c"/>
+                <rect x="255" y="56" width="490" height="8" fill="#d4af37"/>
+                <use href="#pal-chhatri" x="285" y="56"/>
+                <use href="#pal-chhatri" x="715" y="56"/>
+
+                <!-- Grand portal tower -->
+                <rect x="410" y="48" width="180" height="192" fill="#cd664d" stroke="#f5d142" stroke-width="2"/>
+                <rect x="405" y="42" width="190" height="8" fill="#d4af37"/>
+
+                <!-- Main dome -->
+                <path d="M425 42 C420 -10 470 -22 500 -22 C530 -22 580 -10 575 42 Z" fill="#d4af37" stroke="#8a620a" stroke-width="2"/>
+                <path d="M500 -22 L500 42 M470 -14 Q462 14 460 42 M530 -14 Q538 14 540 42" stroke="#8a620a" stroke-width="1.5" fill="none"/>
+                <line x1="500" y1="-22" x2="500" y2="-52" stroke="#d4af37" stroke-width="3"/>
+                <circle cx="500" cy="-54" r="4" fill="#fef08a"/>
+                <path d="M503 -50 L525 -44 L503 -38 Z" fill="#e11d48"/>
+
+                <!-- Layered glowing portal arch -->
+                <path d="M440 240 L440 125 Q500 70 560 125 L560 240 Z" fill="#4a1c11" stroke="#ffd54f" stroke-width="3"/>
+                <path d="M455 240 L455 130 Q500 88 545 130 L545 240 Z" fill="#ffb74d" opacity="0.9"/>
+                <path d="M468 240 L468 135 Q500 105 532 135 L532 240 Z" fill="#4a1c11"/>
+
+                <!-- Arched windows -->
+                <g fill="#ffecb3" stroke="#d4af37" stroke-width="1.5">
+                    <use href="#pal-win" x="290" y="140"/><use href="#pal-win" x="340" y="140"/>
+                    <use href="#pal-win" x="632" y="140"/><use href="#pal-win" x="682" y="140"/>
+                    <use href="#pal-win" x="170" y="150"/><use href="#pal-win" x="215" y="150"/>
+                    <use href="#pal-win" x="757" y="150"/><use href="#pal-win" x="802" y="150"/>
+                </g>
+
+                <!-- Twinkling string lights -->
+                <path d="M80 128 Q170 152 260 128 M740 128 Q830 152 920 128 M265 68 Q335 92 405 68 M595 68 Q665 92 735 68 M410 100 Q500 135 590 100" stroke="#fff3b0" stroke-width="4" stroke-dasharray="1 9" stroke-linecap="round" fill="none">
+                    <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite"/>
+                </path>
+
+                <!-- Row of diyas along the base -->
+                <line x1="90" y1="235" x2="910" y2="235" stroke="#ffd54f" stroke-width="4" stroke-dasharray="1 12" stroke-linecap="round"/>
+                <!-- Courtyard Perspective Floor -->
+                <polygon points="0,320 1000,320 920,240 80,240" fill="#f3e5ab"/>
+                <!-- Star Fountain in Center -->
+                <polygon points="500,250 540,265 590,270 540,280 500,295 460,280 410,270 460,265" fill="#1e293b" stroke="#d4af37" stroke-width="3"/>
+                <circle cx="500" cy="270" r="8" fill="#fef08a"/>
+
+                <!-- Left & Right Full-Plumage Peacocks -->
+                <defs>
+                    <g id="venue-peacock">
+                        <!-- Plumage backdrop -->
+                        <circle cx="0" cy="0" r="57" fill="#166534" stroke="#facc15" stroke-width="2" stroke-dasharray="6 4"/>
+                        <!-- Eye feathers -->
+                        <g stroke="#d4af37" stroke-width="1">
+                            <g transform="rotate(0)"><ellipse cx="0" cy="-38" rx="9" ry="18" fill="#0d9488"/><circle cx="0" cy="-45" r="5" fill="#1d4ed8"/><circle cx="0" cy="-45" r="2.2" fill="#facc15" stroke="none"/></g>
+                            <g transform="rotate(30)"><ellipse cx="0" cy="-38" rx="9" ry="18" fill="#0f766e"/><circle cx="0" cy="-45" r="5" fill="#1d4ed8"/><circle cx="0" cy="-45" r="2.2" fill="#facc15" stroke="none"/></g>
+                            <g transform="rotate(60)"><ellipse cx="0" cy="-38" rx="9" ry="18" fill="#0d9488"/><circle cx="0" cy="-45" r="5" fill="#1d4ed8"/><circle cx="0" cy="-45" r="2.2" fill="#facc15" stroke="none"/></g>
+                            <g transform="rotate(90)"><ellipse cx="0" cy="-38" rx="9" ry="18" fill="#0f766e"/><circle cx="0" cy="-45" r="5" fill="#1d4ed8"/><circle cx="0" cy="-45" r="2.2" fill="#facc15" stroke="none"/></g>
+                            <g transform="rotate(120)"><ellipse cx="0" cy="-38" rx="9" ry="18" fill="#0d9488"/><circle cx="0" cy="-45" r="5" fill="#1d4ed8"/><circle cx="0" cy="-45" r="2.2" fill="#facc15" stroke="none"/></g>
+                            <g transform="rotate(150)"><ellipse cx="0" cy="-38" rx="9" ry="18" fill="#0f766e"/><circle cx="0" cy="-45" r="5" fill="#1d4ed8"/><circle cx="0" cy="-45" r="2.2" fill="#facc15" stroke="none"/></g>
+                            <g transform="rotate(180)"><ellipse cx="0" cy="-38" rx="9" ry="18" fill="#0d9488"/><circle cx="0" cy="-45" r="5" fill="#1d4ed8"/><circle cx="0" cy="-45" r="2.2" fill="#facc15" stroke="none"/></g>
+                            <g transform="rotate(210)"><ellipse cx="0" cy="-38" rx="9" ry="18" fill="#0f766e"/><circle cx="0" cy="-45" r="5" fill="#1d4ed8"/><circle cx="0" cy="-45" r="2.2" fill="#facc15" stroke="none"/></g>
+                            <g transform="rotate(240)"><ellipse cx="0" cy="-38" rx="9" ry="18" fill="#0d9488"/><circle cx="0" cy="-45" r="5" fill="#1d4ed8"/><circle cx="0" cy="-45" r="2.2" fill="#facc15" stroke="none"/></g>
+                            <g transform="rotate(270)"><ellipse cx="0" cy="-38" rx="9" ry="18" fill="#0f766e"/><circle cx="0" cy="-45" r="5" fill="#1d4ed8"/><circle cx="0" cy="-45" r="2.2" fill="#facc15" stroke="none"/></g>
+                            <g transform="rotate(300)"><ellipse cx="0" cy="-38" rx="9" ry="18" fill="#0d9488"/><circle cx="0" cy="-45" r="5" fill="#1d4ed8"/><circle cx="0" cy="-45" r="2.2" fill="#facc15" stroke="none"/></g>
+                            <g transform="rotate(330)"><ellipse cx="0" cy="-38" rx="9" ry="18" fill="#0f766e"/><circle cx="0" cy="-45" r="5" fill="#1d4ed8"/><circle cx="0" cy="-45" r="2.2" fill="#facc15" stroke="none"/></g>
+                        </g>
+                        <!-- Inner gold ring -->
+                        <circle cx="0" cy="0" r="30" fill="#0d9488" stroke="#facc15" stroke-width="2"/>
+                        <circle cx="0" cy="0" r="22" fill="none" stroke="#fde047" stroke-width="1" stroke-dasharray="3 3"/>
+                        <!-- Legs -->
+                        <path d="M-5 32 L-6 50 M5 32 L6 50" stroke="#b45309" stroke-width="2.5" stroke-linecap="round"/>
+                        <!-- Body, neck, head -->
+                        <ellipse cx="0" cy="12" rx="12" ry="22" fill="#1d4ed8" stroke="#d4af37" stroke-width="1.5"/>
+                        <path d="M-7 10 Q0 28 7 10" stroke="#facc15" stroke-width="2" stroke-dasharray="3 2" fill="none"/>
+                        <path d="M-5 -6 Q0 0 5 -6" stroke="#facc15" stroke-width="2" fill="none"/>
+                        <circle cx="0" cy="-15" r="7" fill="#1d4ed8"/>
+                        <path d="M-2 -9 L0 -4 L2 -9 Z" fill="#f59e0b"/>
+                        <circle cx="-2.5" cy="-16" r="1.2" fill="#ffffff"/><circle cx="2.5" cy="-16" r="1.2" fill="#ffffff"/>
+                        <!-- Crest -->
+                        <path d="M0 -21 L-4 -32 M0 -21 L0 -35 M0 -21 L4 -32" stroke="#d4af37" stroke-width="1.5" stroke-linecap="round"/>
+                        <circle cx="-4" cy="-33" r="2" fill="#facc15"/><circle cx="0" cy="-36" r="2" fill="#facc15"/><circle cx="4" cy="-33" r="2" fill="#facc15"/>
+                    </g>
+                </defs>
+
+                <!-- Left & Right Full-Plumage Peacocks -->
+                <use href="#venue-peacock" x="240" y="235"/>
+                <use href="#venue-peacock" x="760" y="235"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         PAGES 9 & 10: SAVE THE DATE, COUNTDOWN & RSVP (0:47 - 0:58)
+         ========================================== -->
+    <section id="savedate" class="relative min-h-screen w-full bg-paper-texture py-24 px-4 flex flex-col items-center justify-center overflow-hidden border-t border-stone-200">
+        
+        <!-- Top-Right Watercolor Eucalyptus Foliage (Matching 0:50 - 0:58) -->
+        <div class="absolute top-0 right-0 w-64 sm:w-80 pointer-events-none opacity-85">
+            <svg viewBox="0 0 300 300" class="w-full h-auto">
+                <path d="M300 0 Q200 80 120 220" fill="none" stroke="#6b8e78" stroke-width="2.5"/>
+                <path d="M300 40 Q180 90 60 110" fill="none" stroke="#6b8e78" stroke-width="2"/>
+                <ellipse cx="180" cy="85" rx="26" ry="16" transform="rotate(-25 180 85)" fill="#a3bfa8" opacity="0.75"/>
+                <ellipse cx="130" cy="95" rx="22" ry="14" transform="rotate(-15 130 95)" fill="#8fb399" opacity="0.8"/>
+                <ellipse cx="160" cy="145" rx="24" ry="15" transform="rotate(-40 160 145)" fill="#b5cbb7" opacity="0.8"/>
+                <circle cx="230" cy="55" r="24" fill="#ffffff" stroke="#dcedc8" stroke-width="2"/>
+                <circle cx="230" cy="55" r="6" fill="#e6c762"/>
+            </svg>
+        </div>
+
+        <!-- Bottom-Left Watercolor Eucalyptus Foliage -->
+        <div class="absolute bottom-0 left-0 w-64 sm:w-80 pointer-events-none opacity-85">
+            <svg viewBox="0 0 300 300" class="w-full h-auto">
+                <path d="M0 300 Q80 180 160 70" fill="none" stroke="#6b8e78" stroke-width="2.5"/>
+                <path d="M20 300 Q120 210 210 180" fill="none" stroke="#6b8e78" stroke-width="2"/>
+                <ellipse cx="95" cy="165" rx="25" ry="18" transform="rotate(35 95 165)" fill="#8fb399" opacity="0.8"/>
+                <ellipse cx="135" cy="115" rx="22" ry="15" transform="rotate(25 135 115)" fill="#a3bfa8" opacity="0.75"/>
+                <ellipse cx="155" cy="200" rx="24" ry="16" transform="rotate(15 155 200)" fill="#b5cbb7" opacity="0.8"/>
+            </svg>
+        </div>
+
+        <!-- Save The Date Container -->
+        <div class="relative z-10 max-w-2xl w-full text-center reveal">
+            <!-- Blessing Quote (0:50) -->
+            <p class="font-display text-lg sm:text-2xl text-[#264134] leading-relaxed mb-10 px-2">
+                A date blessed by tradition<br>
+                <span class="text-base sm:text-xl font-normal text-[#355746]">
+                    As two families come together to celebrate a cherished new beginning, we invite you to mark the day.
+                </span>
+            </p>
+
+            <!-- Save the Date Calligraphy (0:56) -->
+            <div class="my-8 select-none">
+                <h2 class="font-brush text-7xl sm:text-8xl text-[#1e3a2b] leading-none">
+                    Save
+                </h2>
+                <span class="font-serif italic text-xl sm:text-2xl text-stone-400 tracking-widest block -my-2">
+                    the
+                </span>
+                <h2 class="font-brush text-7xl sm:text-8xl text-[#1e3a2b] leading-none">
+                    date
+                </h2>
+                <p class="font-brush text-4xl sm:text-5xl text-[#6b8e78] mt-4 tracking-wider">
+                    02.12.2026
+                </p>
+            </div>
+
+            <!-- Live Countdown Timer to Dec 2, 2026 07:30 PM -->
+            <div class="grid grid-cols-4 gap-3 sm:gap-5 max-w-lg mx-auto my-10">
+                <div class="bg-white/90 border border-[#a3bfa8] rounded-2xl p-3 sm:p-4 shadow-sm">
+                    <span id="days" class="font-display text-2xl sm:text-4xl text-[#1e3a2b] block">00</span>
+                    <span class="text-[10px] sm:text-xs uppercase tracking-widest text-stone-500">Days</span>
+                </div>
+                <div class="bg-white/90 border border-[#a3bfa8] rounded-2xl p-3 sm:p-4 shadow-sm">
+                    <span id="hours" class="font-display text-2xl sm:text-4xl text-[#1e3a2b] block">00</span>
+                    <span class="text-[10px] sm:text-xs uppercase tracking-widest text-stone-500">Hours</span>
+                </div>
+                <div class="bg-white/90 border border-[#a3bfa8] rounded-2xl p-3 sm:p-4 shadow-sm">
+                    <span id="minutes" class="font-display text-2xl sm:text-4xl text-[#1e3a2b] block">00</span>
+                    <span class="text-[10px] sm:text-xs uppercase tracking-widest text-stone-500">Minutes</span>
+                </div>
+                <div class="bg-white/90 border border-[#a3bfa8] rounded-2xl p-3 sm:p-4 shadow-sm">
+                    <span id="seconds" class="font-display text-2xl sm:text-4xl text-[#1e3a2b] block">00</span>
+                    <span class="text-[10px] sm:text-xs uppercase tracking-widest text-stone-500">Seconds</span>
+                </div>
+            </div>
+
+            <div class="my-6">
+                <button onclick="downloadCalendarInvite()" class="inline-flex items-center gap-2 bg-[#1e3a2b] text-white px-6 py-3 rounded-full text-xs sm:text-sm font-medium shadow-md hover:bg-[#14291e] transition">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                    </svg>
+                    <span>Add to Calendar (.ics)</span>
+                </button>
+            </div>
+
+            <!-- Interactive Guest Wishes / RSVP & WhatsApp Share -->
+            <div class="bg-white/90 backdrop-blur-md border border-[#a3bfa8]/60 rounded-3xl p-6 sm:p-8 shadow-lg max-w-xl mx-auto mt-8 text-left">
+                <h3 class="font-display text-2xl text-[#1e3a2b] text-center mb-2">Send Your Blessings &amp; RSVP</h3>
+                <p class="text-xs text-stone-500 text-center mb-6">We can't wait to celebrate with you in Baripada!</p>
+
+                <form id="rsvpForm" onsubmit="submitRSVP(event)" class="space-y-4">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-medium text-stone-600 mb-1">Your Name *</label>
+                            <input type="text" id="guestName" required placeholder="Enter your full name" class="w-full px-4 py-2.5 rounded-xl border border-stone-300 focus:outline-none focus:border-[#1e3a2b] text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-medium text-stone-600 mb-1">Attending Events *</label>
+                            <select id="guestAttendance" class="w-full px-4 py-2.5 rounded-xl border border-stone-300 focus:outline-none focus:border-[#1e3a2b] text-sm bg-white">
+                                <option value="All Ceremonies (Dec 1 & 2)">All Ceremonies (Dec 1 &amp; 2)</option>
+                                <option value="Wedding & Reception (Dec 2)">Wedding &amp; Reception (Dec 2)</option>
+                                <option value="Mehendi & Sangeet (Dec 1)">Mehendi &amp; Sangeet (Dec 1)</option>
+                                <option value="Sending Warm Wishes from Afar">Sending Warm Wishes from Afar</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-medium text-stone-600 mb-1">Warm Wishes for Ankita &amp; Preetikant</label>
+                        <textarea id="guestMessage" rows="2" placeholder="Write a blessing or note for the couple..." class="w-full px-4 py-2.5 rounded-xl border border-stone-300 focus:outline-none focus:border-[#1e3a2b] text-sm"></textarea>
+                    </div>
+                    <div class="flex flex-col sm:flex-row gap-3 pt-2">
+                        <button type="submit" class="flex-1 bg-[#1e3a2b] text-white py-3 px-6 rounded-xl font-medium text-sm hover:bg-[#14291e] transition shadow">
+                            Submit RSVP &amp; Blessing
+                        </button>
+                        <button type="button" onclick="shareOnWhatsApp()" class="inline-flex items-center justify-center gap-2 bg-[#ecfdf5] text-[#047857] border border-[#a7f3d0] py-3 px-5 rounded-xl font-medium text-sm hover:bg-[#d1fae5] transition">
+                            <span>Share Invitation</span>
+                        </button>
+                    </div>
+                </form>
+
+                <!-- Confirmation Banner -->
+                <div id="rsvpToast" class="hidden mt-4 p-4 rounded-xl bg-[#ecfdf5] border border-[#6ee7b7] text-[#065f46] text-xs sm:text-sm text-center font-medium"></div>
+
+                <!-- Recent Guest Blessings Wall -->
+                <div id="wishesWall" class="mt-6 pt-5 border-t border-stone-200/80 space-y-2.5">
+                    <p class="text-[11px] uppercase tracking-wider text-stone-400 font-semibold">Recent Blessings</p>
+                    <div id="wishesList" class="space-y-2 max-h-36 overflow-y-auto pr-1">
+                        <div class="bg-[#f9f8f3] p-3 rounded-xl border border-stone-200/60 text-xs">
+                            <span class="font-semibold text-[#1e3a2b]">Prusti Family:</span>
+                            <span class="text-stone-600"> Looking forward to welcoming you all to celebrate Ankita &amp; Preetikant's new journey!</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="mt-14 pb-12 text-xs text-stone-400">
+                #AnkitaWedsPreetikant • 1st &amp; 2nd December 2026 • Baripada, Mayurbhanj
+            </footer>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         JAVASCRIPT: ANIMATIONS, AUDIO, COUNTDOWN & ICS
+         ========================================== -->
+    <script>
+        // 1. IntersectionObserver for Smooth Scroll-Reveal Animations
+        document.addEventListener('DOMContentLoaded', () => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                    }
+                });
+            }, { threshold: 0.15 });
+
+            document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+            startCountdown();
+            initFireworksCanvas();
+        });
+
+        // 2. Live Countdown Timer to Dec 2, 2026 19:30:00 IST
+        function startCountdown() {
+            const weddingDate = new Date('2026-12-02T19:30:00+05:30').getTime();
+
+            function updateTimer() {
+                const now = new Date().getTime();
+                const diff = weddingDate - now;
+
+                if (diff <= 0) {
+                    document.getElementById('days').textContent = '00';
+                    document.getElementById('hours').textContent = '00';
+                    document.getElementById('minutes').textContent = '00';
+                    document.getElementById('seconds').textContent = '00';
+                    return;
+                }
+
+                const d = Math.floor(diff / (1000 * 60 * 60 * 24));
+                const h = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const m = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+                const s = Math.floor((diff % (1000 * 60)) / 1000);
+
+                document.getElementById('days').textContent = String(d).padStart(2, '0');
+                document.getElementById('hours').textContent = String(h).padStart(2, '0');
+                document.getElementById('minutes').textContent = String(m).padStart(2, '0');
+                document.getElementById('seconds').textContent = String(s).padStart(2, '0');
+            }
+
+            updateTimer();
+            setInterval(updateTimer, 1000);
+        }
+
+        // 3. Gentle Indian Flute & Piano Instrumental Synthesizer (Tone.js)
+        // let isPlayingMusic = false;
+        // let fluteSynth = null;
+        // let padSynth = null;
+        // let melodyLoop = null;
+
+        // async function toggleWeddingMusic() {
+        //     const musicText = document.getElementById('musicText');
+        //     const bar1 = document.getElementById('bar1');
+        //     const bar2 = document.getElementById('bar2');
+        //     const bar3 = document.getElementById('bar3');
+
+        //     if (!isPlayingMusic) {
+        //         await Tone.start();
+
+        //         if (!fluteSynth) {
+        //             const reverb = new Tone.Reverb({ decay: 4, wet: 0.5 }).toDestination();
+        //             fluteSynth = new Tone.Synth({
+        //                 oscillator: { type: 'sine' },
+        //                 envelope: { attack: 0.4, decay: 0.3, sustain: 0.8, release: 1.5 }
+        //             }).connect(reverb);
+        //             fluteSynth.volume.value = -10;
+
+        //             padSynth = new Tone.PolySynth(Tone.Synth, {
+        //                 oscillator: { type: 'triangle' },
+        //                 envelope: { attack: 0.8, decay: 0.5, sustain: 0.6, release: 2 }
+        //             }).connect(reverb);
+        //             padSynth.volume.value = -18;
+
+        //             // Serene Indian Raga-inspired Flute Melody (Yaman/Bhupali scale notes)
+        //             const notes = ['C5', 'D5', 'E5', 'G5', 'A5', 'G5', 'E5', 'D5', 'C5', 'A4', 'C5', 'E5', 'D5', 'C5'];
+        //             let idx = 0;
+
+        //             melodyLoop = new Tone.Loop((time) => {
+        //                 const note = notes[idx % notes.length];
+        //                 fluteSynth.triggerAttackRelease(note, '2n', time);
+        //                 if (idx % 4 === 0) {
+        //                     padSynth.triggerAttackRelease(['C4', 'G4', 'E4'], '1m', time);
+        //                 }
+        //                 idx++;
+        //             }, '2n');
+        //         }
+
+        //         Tone.Transport.bpm.value = 76;
+        //         Tone.Transport.start();
+        //         melodyLoop.start(0);
+
+        //         isPlayingMusic = true;
+        //         musicText.textContent = 'Pause Music';
+        //         bar1.classList.add('animate-bounce');
+        //         bar2.classList.add('animate-bounce');
+        //         bar3.classList.add('animate-bounce');
+        //     } else {
+        //         Tone.Transport.pause();
+        //         isPlayingMusic = false;
+        //         musicText.textContent = 'Play Music';
+        //         bar1.classList.remove('animate-bounce');
+        //         bar2.classList.remove('animate-bounce');
+        //         bar3.classList.remove('animate-bounce');
+        //     }
+        // }
+        // 3. Background music from YouTube (hidden player)
+        // 3. Background music: MP3 first, YouTube as fallback
+        // 3. Background music (hidden audio, controlled by the button)
+        const MUSIC_URL = 'https://drive.google.com/uc?export=download&id=1kJVQaMoqTjK7NMUXLrI5WNkS3za3gayY';
+        const bgAudio = new Audio();
+        bgAudio.loop = true;
+        bgAudio.volume = 0.6;
+        bgAudio.preload = 'none';
+        let musicOn = false;
+
+        function setMusicUI(on, label) {
+            document.getElementById('musicText').textContent = label || (on ? 'Pause Music' : 'Play Music');
+            ['bar1', 'bar2', 'bar3'].forEach(id =>
+                document.getElementById(id).classList.toggle('animate-bounce', on));
+        }
+
+        function toggleWeddingMusic() {
+            if (!musicOn) {
+                if (!bgAudio.src) bgAudio.src = MUSIC_URL;
+                bgAudio.play()
+                    .then(() => { musicOn = true; setMusicUI(true); })
+                    .catch(() => {
+                        setMusicUI(false, 'Music unavailable');
+                        setTimeout(() => setMusicUI(false), 3000);
+                    });
+            } else {
+                bgAudio.pause();
+                musicOn = false;
+                setMusicUI(false);
+            }
+        }
+
+        // 4. Download .ICS Calendar File for Dec 1 & Dec 2, 2026
+        function downloadCalendarInvite() {
+            const icsContent = [
+                "BEGIN:VCALENDAR",
+                "VERSION:2.0",
+                "PRODID:-//Ankita & Preetikant Wedding//EN",
+                "BEGIN:VEVENT",
+                "DTSTART:20261202T140000Z",
+                "DTEND:20261202T180000Z",
+                "SUMMARY:Ankita & Preetikant - Wedding & Reception",
+                "DESCRIPTION:Be our guest at the Wedding & Reception of Ankita (D/o Mrs. Itishree Prusti & Mr. Sumanta Ku. Prusti) and Preetikant (S/o Mrs. Bhrulata Rout & Mr. Prasant Kumar Rout).",
+                "LOCATION:Swastik Garden, Deula Sahi, Baripada, Mayurbhanj",
+                "END:VEVENT",
+                "END:VCALENDAR"
+            ].join("\r\n");
+
+            const blob = new Blob([icsContent], { type: 'text/calendar;charset=utf-8' });
+            const link = document.createElement('a');
+            link.href = URL.createObjectURL(blob);
+            link.setAttribute('download', 'Ankita-Preetikant-Wedding-Dec-2026.ics');
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+
+        // 5. RSVP & Blessings Wall Submission
+        function submitRSVP(event) {
+            event.preventDefault();
+            const name = document.getElementById('guestName').value.trim();
+            const attendance = document.getElementById('guestAttendance').value;
+            const message = document.getElementById('guestMessage').value.trim() || 'Wishing Ankita & Preetikant a lifetime of happiness!';
+
+            if (!name) return;
+
+            const wishesList = document.getElementById('wishesList');
+            const newWish = document.createElement('div');
+            newWish.className = 'bg-[#f9f8f3] p-3 rounded-xl border border-stone-200/60 text-xs';
+            newWish.innerHTML = `<span class="font-semibold text-[#1e3a2b]">${escapeHtml(name)} (${escapeHtml(attendance)}):</span> <span class="text-stone-600">${escapeHtml(message)}</span>`;
+            wishesList.prepend(newWish);
+
+            const toast = document.getElementById('rsvpToast');
+            toast.textContent = `Thank you, ${name}! Your RSVP (${attendance}) and blessings have been recorded.`;
+            toast.classList.remove('hidden');
+
+            document.getElementById('rsvpForm').reset();
+        }
+
+        function escapeHtml(str) {
+            return str.replace(/[&<>'"]/g, tag => ({
+                '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;'
+            }[tag]));
+        }
+
+        // 6. Share on WhatsApp
+        function shareOnWhatsApp() {
+            const text = encodeURIComponent(
+                "✨ *Om Shree Shree Ganeshay Namah* ✨\n\n" +
+                "You are cordially invited to the Wedding Ceremony of\n" +
+                "💍 *Ankita & Preetikant* 💍\n\n" +
+                "🌿 *Mehendi*: 1st Dec 2026, 9:30 AM\n" +
+                "🎶 *Sangeet*: 1st Dec 2026, 7:30 PM\n" +
+                "🌼 *Haldi*: 2nd Dec 2026, 9:30 AM\n" +
+                "👑 *Wedding & Reception*: 2nd Dec 2026, 7:30 PM Onwards\n\n" +
+                "📍 *Venue*: Swastik Garden, Deula Sahi, Baripada, Mayurbhanj"
+            );
+            window.open(`https://wa.me/?text=${text}`, '_blank');
+        }
+
+        // 7. Palace Fireworks Canvas Animation (Matching 0:42 - 0:46)
+        function initFireworksCanvas() {
+            const canvas = document.getElementById('fireworksCanvas');
+            if (!canvas) return;
+            const ctx = canvas.getContext('2d');
+            let particles = [];
+
+            function resizeCanvas() {
+                canvas.width = canvas.parentElement.clientWidth;
+                canvas.height = canvas.parentElement.clientHeight;
+            }
+            resizeCanvas();
+            window.addEventListener('resize', resizeCanvas);
+
+            function createBurst() {
+                const x = Math.random() * canvas.width * 0.8 + canvas.width * 0.1;
+                const y = Math.random() * canvas.height * 0.38 + canvas.height * 0.08;
+                const colors = ['#38bdf8', '#f43f5e', '#facc15', '#a855f7'];
+                const color = colors[Math.floor(Math.random() * colors.length)];
+
+                for (let i = 0; i < 28; i++) {
+                    const angle = (Math.PI * 2 * i) / 28;
+                    const speed = Math.random() * 1.6 + 0.6;
+                    particles.push({
+                        x, y,
+                        vx: Math.cos(angle) * speed,
+                        vy: Math.sin(angle) * speed,
+                        alpha: 1,
+                        color
+                    });
+                }
+            }
+
+            setInterval(createBurst, 2200);
+            createBurst();
+
+            function animateFireworks() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                for (let i = particles.length - 1; i >= 0; i--) {
+                    const p = particles[i];
+                    p.x += p.vx;
+                    p.y += p.vy;
+                    p.alpha -= 0.012;
+
+                    if (p.alpha <= 0) {
+                        particles.splice(i, 1);
+                        continue;
+                    }
+
+                    ctx.save();
+                    ctx.globalAlpha = p.alpha;
+                    ctx.fillStyle = p.color;
+                    ctx.beginPath();
+                    ctx.arc(p.x, p.y, 2.2, 0, Math.PI * 2);
+                    ctx.fill();
+                    ctx.restore();
+                }
+                requestAnimationFrame(animateFireworks);
+            }
+            animateFireworks();
+        }
+    </script>
+</body>
+</html>
